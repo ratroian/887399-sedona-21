@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page__body">
+
+    <header class="page-header">
+      <a href="" class="page-header__logo">
+        <img class="page-header__logo-image" src="" width="102" height="84" alt="Sedona">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">\
+            <li class="site-list__item--active"><a href="">Главная</a></li>
+            <li class="site-list__item"><a href="Catalog.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="Form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма обратной связи</h1>
+
+      <h2 class="benefits__slogan">Оставьте свой отзыв</h2>
+      <p class="benefits__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+      <form class="form" action="" method="post">
+        <div class="form__element">
+          <h3>Контактная информация:</h3>
+          <div class="form__item">
+            <label class="" for="username">Имя*:</label>
+            <input class="form-input" type="text" name="username" id="username" placeholder="Имя">
+          </div>
+          <div class="">
+            <label class="" for="lastname">Фамилия*:</label>
+            <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+          </div>
+          <div class="modal-username">
+            <label class="" for="middlename">Отчество:</label>
+            <input class="form-input" type="text" name="middlename" id="middlename" placeholder="Отчество">
+          </div>
+        </div>
+        <div class="form__element">
+          <h3>Ваше общее впечатление:</h3>
+          <div class="">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="">
+            <label for="tel">Номер телефона</label>
+            <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+          </div>
+        </div>
+        <div class="form__element">
+          <h3>Ваше общее впечатление:</h3>
+          <div class="">
+            <input class="" type="radio" name="product-group" value="adaptive" id="filter-adaptive">
+            <label for="filter-adaptive">Скорее положительное</label>
+          </div>
+          <div class="">
+            <input class="" type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
+            <label for="filter-fixed">Скорее отрицательное</label>
+          </div>
+          <div class="">
+            <input class="" type="radio" name="product-group" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Затрудняюсь ответить</label>
+          </div>
+        </div>
+        <div class="form__element">
+          <h3>Посещенные достопримечательности:</h3>
+          <div class="">
+            <input class="" type="checkbox" name="filter-checkbox" id="filter-slider" value="slider" checked>
+            <label for="filter-slider">Мост Дьявола</label>
+          </div>
+          <div class="">
+            <input class="" type="checkbox" name="filter-checkbox" id="filter-advantages" value="block-advantages" checked>
+            <label for="filter-advantages">Гора-Колокол</label>
+          </div>
+          <div class="">
+            <input class="" type="checkbox" name="filter-checkbox" id="filter-news" value="news" checked>
+            <label for="filter-news">Слайд-парк</label>
+          </div>
+          <div class="">
+            <input class="" type="checkbox" name="filter-checkbox" id="filter-gallery" value="gallary">
+            <label for="filter-gallery">Красные скалы</label>
+          </div>
+        </div>
+        <div class="form__element">
+          <h3>Опишите свои эмоции:</h3>
+          <div class="">
+            <label for="massage-field" class="massage label-form">Текст письма:</label>
+            <textarea class="form-input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>
+          </div>
+          <input class="" type="submit" value="Отправить">
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__map">
+        </div>
+        <div class="page-footer__hushteg">
+          <b>#visitSEDONA</b>
+        </div>
+        <div class="page-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <b>Разработано <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></b>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
