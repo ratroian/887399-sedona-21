@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -8,14 +8,14 @@
   <body class="page__body">
 
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img class="page-header__logo-image" src="" width="102" height="84" alt="Sedona">
+      <a class="page-header__link logo" href="">
+        <img class="logo__logo-image" src="img/logo.svg" width="102" height="84" alt="Sedona">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">\
-            <li class="site-list__item--active"><a href="">Главная</a></li>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
             <li class="site-list__item"><a href="Catalog.html">Фото и видео</a></li>
             <li class="site-list__item"><a href="Form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a href="">HTML Academy</a></li>
@@ -26,91 +26,89 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма обратной связи</h1>
-
-      <h2 class="benefits__slogan">Оставьте свой отзыв</h2>
-      <p class="benefits__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-
-      <form class="form" action="" method="post">
-        <div class="form__element">
-          <h3>Контактная информация:</h3>
-          <div class="form__item">
-            <label class="" for="username">Имя*:</label>
-            <input class="form-input" type="text" name="username" id="username" placeholder="Имя">
+      <div class="title-block">
+        <h2 class="title-block__slogan">Оставьте свой отзыв</h2>
+        <p class="title-block__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__element form-fullname">
+          <h3 class="form-fullname__title">Контактная информация:</h3>
+          <div class="form-fullname__name name">
+            <label class="name__title" for="username">Имя*:</label>
+            <input class="name__input" type="text" name="username" id="username" placeholder="Имя">
           </div>
-          <div class="">
-            <label class="" for="lastname">Фамилия*:</label>
-            <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+          <div class="form-fullname__lastname lastname">
+            <label class="lastname__title" for="lastname">Фамилия*:</label>
+            <input class="lastname__input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
           </div>
-          <div class="modal-username">
-            <label class="" for="middlename">Отчество:</label>
-            <input class="form-input" type="text" name="middlename" id="middlename" placeholder="Отчество">
+          <div class="form-fullname__middlename middlename">
+            <label class="middlename__title" for="middlename">Отчество:</label>
+            <input class="middlename__input" type="text" name="middlename" id="middlename" placeholder="Отчество">
           </div>
-        </div>
-        <div class="form__element">
-          <h3>Ваше общее впечатление:</h3>
-          <div class="">
-            <label for="email">Email</label>
-            <input type="email" name="email" required>
+        </fieldset>
+        <fieldset class="form__element form-contact">
+          <h3 class="form-contact__title">Ваше общее впечатление:</h3>
+          <div class="form-contact__email email">
+            <label class="email__title" for="email">Email</label>
+            <input class="email__input" type="email" id="email" name="email" required>
           </div>
-          <div class="">
-            <label for="tel">Номер телефона</label>
-            <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+          <div class="form-contact__phone phone">
+            <label class="phone__title" for="tel">Номер телефона</label>
+            <input class="phone__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
           </div>
-        </div>
-        <div class="form__element">
-          <h3>Ваше общее впечатление:</h3>
-          <div class="">
-            <input class="" type="radio" name="product-group" value="adaptive" id="filter-adaptive">
-            <label for="filter-adaptive">Скорее положительное</label>
+        </fieldset>
+        <fieldset class="form__element form-rating">
+          <h3 class="form-rating__title">Ваше общее впечатление:</h3>
+          <div class="form-rating__radio radio">
+            <input class="radio__button" type="radio" name="product-group" value="adaptive" id="filter-positive">
+            <label class="radio__label" for="filter-positive">Скорее положительное</label>
           </div>
-          <div class="">
-            <input class="" type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
-            <label for="filter-fixed">Скорее отрицательное</label>
+          <div class="form-rating__radio radio">
+            <input class="radio__button" type="radio" name="product-group" value="fixed" id="filter-negative" checked>
+            <label class="radio__label" for="filter-negative">Скорее отрицательное</label>
           </div>
-          <div class="">
-            <input class="" type="radio" name="product-group" value="rubber" id="filter-rubber">
-            <label for="filter-rubber">Затрудняюсь ответить</label>
+          <div class="form-rating__radio radio">
+            <input class="radio__button" type="radio" name="product-group" value="rubber" id="filter-unknow">
+            <label class="radio__label" for="filter-unknow">Затрудняюсь ответить</label>
           </div>
-        </div>
-        <div class="form__element">
-          <h3>Посещенные достопримечательности:</h3>
-          <div class="">
-            <input class="" type="checkbox" name="filter-checkbox" id="filter-slider" value="slider" checked>
-            <label for="filter-slider">Мост Дьявола</label>
+        </fieldset>
+        <fieldset class="form__element form-location">
+          <h3 class="form-location__title">Посещенные достопримечательности:</h3>
+          <div class="form-location__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
+            <label class="checkbox__label" for="filter-devils-bridge">Мост Дьявола</label>
           </div>
-          <div class="">
-            <input class="" type="checkbox" name="filter-checkbox" id="filter-advantages" value="block-advantages" checked>
-            <label for="filter-advantages">Гора-Колокол</label>
+          <div class="form-location__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-mount-bell" value="mount-bell" checked>
+            <label class="checkbox__label" for="filter-mount-bell">Гора-Колокол</label>
           </div>
-          <div class="">
-            <input class="" type="checkbox" name="filter-checkbox" id="filter-news" value="news" checked>
-            <label for="filter-news">Слайд-парк</label>
+          <div class="form-location__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-slide-park" value="slide-park" checked>
+            <label class="checkbox__label" for="filter-slide-park">Слайд-парк</label>
           </div>
-          <div class="">
-            <input class="" type="checkbox" name="filter-checkbox" id="filter-gallery" value="gallary">
-            <label for="filter-gallery">Красные скалы</label>
+          <div class="form-location__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-red-rocks" value="red-rocks">
+            <label class="checkbox__label" for="filter-red-rocks">Красные скалы</label>
           </div>
-        </div>
-        <div class="form__element">
-          <h3>Опишите свои эмоции:</h3>
-          <div class="">
-            <label for="massage-field" class="massage label-form">Текст письма:</label>
-            <textarea class="form-input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <fieldset class="form__element form-comment">
+          <h3 class="form-comment__title">Опишите свои эмоции:</h3>
+          <div class="form-comment__textarea textarea">
+            <label class="textarea__label" for="massage-field">Текст письма:</label>
+            <textarea class="textarea__input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>
           </div>
-          <input class="" type="submit" value="Отправить">
-        </div>
+        </fieldset>
+        <input class="form__element form-button button" type="submit" value="Отправить">
       </form>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__map">
-        </div>
-        <div class="page-footer__hushteg">
+      <div class="page-footer wrapper">
+        <div class=" page-footer__hushtag hushtag">
           <b>#visitSEDONA</b>
         </div>
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">twitter</a>
@@ -123,7 +121,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="copyright">
           <b>Разработано <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></b>
         </div>
       </div>
