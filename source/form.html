@@ -27,38 +27,38 @@
     <main class="page-main">
       <h1 class="visually-hidden">Форма обратной связи</h1>
       <div class="title-block">
-        <h2 class="title-block__slogan">Оставьте свой отзыв</h2>
+        <h2 class="title-block__title title">Оставьте свой отзыв</h2>
         <p class="title-block__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__element form-fullname">
-          <h3 class="form-fullname__title">Контактная информация:</h3>
-          <div class="form-fullname__name name">
-            <label class="name__title" for="username">Имя*:</label>
-            <input class="name__input" type="text" name="username" id="username" placeholder="Имя">
+          <h3 class="form-fullname__title title">Представьтесь:</h3>
+          <div class="form-fullname__element name">
+            <label class="name__label" for="username">Имя*:</label>
+            <input class="name__input text-input" type="text" name="username" id="username" placeholder="Имя">
           </div>
-          <div class="form-fullname__lastname lastname">
-            <label class="lastname__title" for="lastname">Фамилия*:</label>
-            <input class="lastname__input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+          <div class="form-fullname__element lastname">
+            <label class="lastname__label" for="lastname">Фамилия*:</label>
+            <input class="lastname__input text-input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
           </div>
-          <div class="form-fullname__middlename middlename">
-            <label class="middlename__title" for="middlename">Отчество:</label>
-            <input class="middlename__input" type="text" name="middlename" id="middlename" placeholder="Отчество">
+          <div class="form-fullname__element middlename">
+            <label class="middlename__label" for="middlename">Отчество:</label>
+            <input class="middlename__input text-input" type="text" name="middlename" id="middlename" placeholder="Отчество">
           </div>
         </fieldset>
         <fieldset class="form__element form-contact">
-          <h3 class="form-contact__title">Ваше общее впечатление:</h3>
-          <div class="form-contact__email email">
-            <label class="email__title" for="email">Email</label>
-            <input class="email__input" type="email" id="email" name="email" required>
+          <h3 class="form-contact__title title">Контактная информация:</h3>
+          <div class="form-contact__element phone">
+            <label class="phone__label" for="tel">Номер телефона</label>
+            <input class="phone__input text-input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
           </div>
-          <div class="form-contact__phone phone">
-            <label class="phone__title" for="tel">Номер телефона</label>
-            <input class="phone__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+          <div class="form-contact__element email">
+            <label class="email__label" for="email">Email</label>
+            <input class="email__input text-input" type="email" id="email" name="email" required>
           </div>
         </fieldset>
         <fieldset class="form__element form-rating">
-          <h3 class="form-rating__title">Ваше общее впечатление:</h3>
+          <h3 class="form-rating__title title">Ваше общее впечатление:</h3>
           <div class="form-rating__radio radio">
             <input class="radio__button" type="radio" name="product-group" value="adaptive" id="filter-positive">
             <label class="radio__label" for="filter-positive">Скорее положительное</label>
@@ -73,7 +73,7 @@
           </div>
         </fieldset>
         <fieldset class="form__element form-location">
-          <h3 class="form-location__title">Посещенные достопримечательности:</h3>
+          <h3 class="form-location__title title">Посещенные достопримечательности:</h3>
           <div class="form-location__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
             <label class="checkbox__label" for="filter-devils-bridge">Мост Дьявола</label>
@@ -92,13 +92,13 @@
           </div>
         </fieldset>
         <fieldset class="form__element form-comment">
-          <h3 class="form-comment__title">Опишите свои эмоции:</h3>
+          <h3 class="form-comment__title title">Опишите свои эмоции:</h3>
           <div class="form-comment__textarea textarea">
             <label class="textarea__label" for="massage-field">Текст письма:</label>
             <textarea class="textarea__input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>
           </div>
         </fieldset>
-        <input class="form__element form-button button" type="submit" value="Отправить">
+        <button class="form__element form-button button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
 
     </main>
