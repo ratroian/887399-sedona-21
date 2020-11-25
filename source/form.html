@@ -33,28 +33,28 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__element form-fullname">
           <h3 class="form-fullname__title title">Представьтесь:</h3>
-          <div class="form-fullname__element name">
-            <label class="name__label" for="username">Имя*:</label>
-            <input class="name__input text-input" type="text" name="username" id="username" placeholder="Имя">
+          <div class="form-fullname__element contact-info">
+            <label class="contact-info__label" for="username">Имя*:</label>
+            <input class="contact-info__input" type="text" name="username" id="username" placeholder="Имя">
           </div>
-          <div class="form-fullname__element lastname">
-            <label class="lastname__label" for="lastname">Фамилия*:</label>
-            <input class="lastname__input text-input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+          <div class="form-fullname__element contact-info">
+            <label class="contact-info__label" for="lastname">Фамилия*:</label>
+            <input class="contact-info__input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
           </div>
-          <div class="form-fullname__element middlename">
-            <label class="middlename__label" for="middlename">Отчество:</label>
-            <input class="middlename__input text-input" type="text" name="middlename" id="middlename" placeholder="Отчество">
+          <div class="form-fullname__element contact-info">
+            <label class="contact-info__label" for="middlename">Отчество:</label>
+            <input class="contact-info__input" type="text" name="middlename" id="middlename" placeholder="Отчество">
           </div>
         </fieldset>
-        <fieldset class="form__element form-contact">
-          <h3 class="form-contact__title title">Контактная информация:</h3>
-          <div class="form-contact__element phone">
-            <label class="phone__label" for="tel">Номер телефона</label>
-            <input class="phone__input text-input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+        <fieldset class="form__element contact-info">
+          <h3 class="contact-info__title title">Контактная информация:</h3>
+          <div class="contact-info__element contact-info contact-info--column">
+            <label class="contact-info__label" for="tel">Контактный телефон*:</label>
+            <input class="contact-info__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
           </div>
-          <div class="form-contact__element email">
-            <label class="email__label" for="email">Email</label>
-            <input class="email__input text-input" type="email" id="email" name="email" required>
+          <div class="contact-info__element contact-info contact-info--column">
+            <label class="contact-info__label" for="email">Электронная почта*:</label>
+            <input class="contact-info__input" type="email" id="email" name="email" required>
           </div>
         </fieldset>
         <fieldset class="form__element form-rating">
@@ -98,13 +98,13 @@
             <textarea class="textarea__input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>
           </div>
         </fieldset>
-        <button class="form__element form-button button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="form__element button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer wrapper">
+      <div class="page-footer__wrapper">
         <div class=" page-footer__hushtag hushtag">
           <b>#visitSEDONA</b>
         </div>
