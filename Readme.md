@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ruslan Troyan](https://up.htmlacademy.ru/adaptive/21/user/887399).
-* Наставник: [Ярослав Косович] (https://htmlacademy.ru/profile/id703025).
+* Наставник: [Ярослав Косович](https://htmlacademy.ru/profile/id703025).
 
 ---
 
