@@ -26,35 +26,38 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Форма обратной связи</h1>
-      <div class="title-block">
-        <h2 class="title-block__title title">Оставьте свой отзыв</h2>
-        <p class="title-block__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="hero">
+        <img class="hero__image" src="https://via.placeholder.com/150x150" alt="Welcome to Sedona" width="150" height="150">
+      </div>
+      <div class="title">
+        <h2 class="title__header">Оставьте свой отзыв</h2>
+        <p class="title__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__element form-fullname">
           <h3 class="form-fullname__title title">Представьтесь:</h3>
-          <div class="form-fullname__element contact-info">
-            <label class="contact-info__label" for="username">Имя*:</label>
-            <input class="contact-info__input" type="text" name="username" id="username" placeholder="Имя">
+          <div class="form-fullname__element text-field">
+            <label class="text-field__label" for="username">Имя*:</label>
+            <input class="text-field__input" type="text" name="username" id="username" placeholder="Имя">
           </div>
-          <div class="form-fullname__element contact-info">
-            <label class="contact-info__label" for="lastname">Фамилия*:</label>
-            <input class="contact-info__input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+          <div class="form-fullname__element text-field">
+            <label class="text-field__label" for="lastname">Фамилия*:</label>
+            <input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
           </div>
-          <div class="form-fullname__element contact-info">
-            <label class="contact-info__label" for="middlename">Отчество:</label>
-            <input class="contact-info__input" type="text" name="middlename" id="middlename" placeholder="Отчество">
+          <div class="form-fullname__element text-field">
+            <label class="text-field__label" for="middlename">Отчество:</label>
+            <input class="text-field__input" type="text" name="middlename" id="middlename" placeholder="Отчество">
           </div>
         </fieldset>
-        <fieldset class="form__element contact-info">
-          <h3 class="contact-info__title title">Контактная информация:</h3>
-          <div class="contact-info__element contact-info contact-info--column">
-            <label class="contact-info__label" for="tel">Контактный телефон*:</label>
-            <input class="contact-info__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+        <fieldset class="form__element text-field">
+          <h3 class="text-field__title title">Контактная информация:</h3>
+          <div class="text-field__element text-field text-field--column">
+            <label class="text-field__label" for="tel">Контактный телефон*:</label>
+            <input class="text-field__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
           </div>
-          <div class="contact-info__element contact-info contact-info--column">
-            <label class="contact-info__label" for="email">Электронная почта*:</label>
-            <input class="contact-info__input" type="email" id="email" name="email" required>
+          <div class="text-field__element text-field text-field--column">
+            <label class="text-field__label" for="email">Электронная почта*:</label>
+            <input class="text-field__input" type="email" id="email" name="email" required>
           </div>
         </fieldset>
         <fieldset class="form__element form-rating">
