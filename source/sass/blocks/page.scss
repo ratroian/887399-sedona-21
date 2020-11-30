@@ -1,0 +1,12 @@
+// Начните писать стили здесь
+.page__body {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #000000;
+  height: 100%;
+  width: 320px;
+}

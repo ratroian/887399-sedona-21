@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// global
+@import "global/fonts.scss";
+
+// blocks
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page.scss";
+@import "blocks/benefits-item.scss";
+@import "blocks/hero.scss";
+@import "blocks/content.scss";
+@import "blocks/benefits.scss";
+@import "blocks/services-list.scss";
+@import "blocks/button.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/hushtag.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/selection.scss";
+@import "blocks/page-main.scss";
+@import "blocks/services.scss";
+@import "blocks/title.scss";

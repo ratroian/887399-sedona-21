@@ -1,0 +1,35 @@
+// Начните писать стили здесь
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 32px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.content--color {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.content__title {
+  font-size: 18px;
+  line-height: 1.44;
+  padding-top: 0;
+  margin: 0;
+}
+
+.content__number {
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+
+.content__intro {
+  padding: 0;
+  margin: 0;
+}

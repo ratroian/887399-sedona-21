@@ -1,0 +1,10 @@
+// Начните писать стили здесь
+.services-list {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  outline: 5px solid rgba(115, 255, 0, 0.7);
+  outline-offset: -5px;
+}
