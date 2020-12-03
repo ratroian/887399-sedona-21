@@ -1,7 +1,6 @@
-// Начните писать стили здесь
 .button {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $background-button;
+  color: $text-color-button;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 1.24;

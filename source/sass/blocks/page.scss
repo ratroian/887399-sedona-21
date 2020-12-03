@@ -1,12 +1,11 @@
-// Начните писать стили здесь
 .page__body {
   display: flex;
   flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.44;
-  color: #000000;
+  color: $content-text-color;
   height: 100%;
   width: 320px;
 }

@@ -1,8 +1,7 @@
-// Начните писать стили здесь
 .site-list {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: $text-color-nav;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;

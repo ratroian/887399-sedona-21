@@ -1,10 +1,9 @@
-// Начните писать стили здесь
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: $background-content;
   text-transform: uppercase;
   padding-top: 40px;
   padding-bottom: 32px;
@@ -13,8 +12,8 @@
 }
 
 .content--color {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $background-content-focus;
+  color: $text-color-button;
 }
 
 .content__title {

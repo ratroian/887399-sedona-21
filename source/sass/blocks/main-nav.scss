@@ -1,8 +1,7 @@
-// Начните писать стили здесь
 .main-nav {
   display: flex;
   flex-direction: row;
-  color: #ffffff;
+  color: $text-color-nav;
   font-weight: 700;
   text-transform: uppercase;
   height: 22px;
