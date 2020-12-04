@@ -1,0 +1,19 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  color: $text-color-nav;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__toggle {
+  width: 22px;
+  height: 22px;
+}

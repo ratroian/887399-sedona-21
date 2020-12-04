@@ -1,0 +1,13 @@
+.social__list {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.social__link {
+  background-color: $background-socials;
+}
+
+.social__item {
+  padding-right: 20px;
+}
