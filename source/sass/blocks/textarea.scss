@@ -1,0 +1,16 @@
+.textarea__label {
+  text-transform: uppercase;
+  color: $content-text-color;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+.textarea__input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
+  color: $content-title-color;
+  border: none;
+  background-color: $background-form-input;
+  margin-bottom: 50px;
+}
