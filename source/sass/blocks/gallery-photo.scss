@@ -1,0 +1,15 @@
+.gallery-photo {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.gallery-photo__name {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $content-title-color;
+}
+
+.gallery-photo__author {
+  color: $content-text-color;
+}

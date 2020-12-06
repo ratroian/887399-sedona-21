@@ -1,0 +1,13 @@
+.like-meter {
+  display: flex;
+  flex-direction: row;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.like-meter__button {
+  width: 22px;
+  height: 22px;
+}
