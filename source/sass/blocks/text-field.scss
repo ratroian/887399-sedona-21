@@ -1,0 +1,19 @@
+.text-field__label {
+  text-transform: uppercase;
+  color: $content-text-color;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+.text-field__input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
+  background-color: $background-form-input;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+}
+
+.text-field__input::placeholder {
+  color: $content-title-color;
+}
