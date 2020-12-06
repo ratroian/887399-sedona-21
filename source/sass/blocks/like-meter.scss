@@ -1,10 +1,9 @@
 .like-meter {
   display: flex;
   flex-direction: row;
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.71;
+  color: $content-title-color;
 }
 
 .like-meter__button {
