@@ -1,0 +1,14 @@
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__item {
+  padding-top: 22px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}

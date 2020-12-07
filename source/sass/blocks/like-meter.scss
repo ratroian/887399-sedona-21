@@ -1,0 +1,12 @@
+.like-meter {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  line-height: 1.71;
+  color: $content-title-color;
+}
+
+.like-meter__button {
+  width: 22px;
+  height: 22px;
+}
