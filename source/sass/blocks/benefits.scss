@@ -1,5 +1,33 @@
+.benefits {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    width: 1200px;
+  }
+}
+
 .benefits__list {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  // .benefits-image {
+  //   width: 512px;
+  // }
 }

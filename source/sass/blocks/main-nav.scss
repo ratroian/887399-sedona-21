@@ -1,19 +1,44 @@
 .main-nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   color: $text-color-nav;
   font-weight: 700;
   text-transform: uppercase;
   height: 22px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .main-nav__wrapper {
   display: none;
+  width: 320px;
 }
 
 .main-nav__toggle {
   width: 22px;
   height: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+    width: 1200px;
+  }
 }

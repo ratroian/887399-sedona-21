@@ -4,4 +4,15 @@
   align-items: center;
   align-content: center;
   padding-bottom: 50px;
+  width: 100%;
+}
+
+.selection__content {
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .selection__content {
+    width: 458px;
+  }
 }
