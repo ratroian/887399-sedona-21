@@ -5,31 +5,13 @@
   margin: 0;
   padding: 0;
   height: 84px;
-  width: 320px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
     flex-direction: row;
-    width: 768px;
-  }
-
-  .page-header__nav {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .page-header__link {
-    order: 2;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
   }
 
   .page-header__nav {

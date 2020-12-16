@@ -3,33 +3,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .benefits__item:first-child {
-    display: grid;
-    grid-template-areas:
-      "gr-text gr-image gr-image"
-      "gr-list gr-list gr-list";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:
-      256px
-      256px;
-    // grid-gap: 10px;
-    // min-height: 100vh;
+  .benefits-item {
+    width: 33.33%;
   }
+}
 
-  .benefits-item__content {
-    grid-area: gr-text;
-  }
+.benefits-item__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  @media (min-width: $tablet-width) {
-    .benefits-item__content {
-      width: 256px;
-    }
-  }
+.benefits-item__content {
+  width: 100%;
+}
 
-  @media (min-width: $desktop-width) {
-    .benefits-item__content {
-      width: 400px;
-    }
+.benefits-item__image {
+  min-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item__image {
+    min-width: 66.66%;
   }
 
   .benefits-item--reverse {
@@ -40,33 +35,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .benefits__item:first-child {
-    display: grid;
-    grid-template-areas:
-      "gr-text gr-image gr-image"
-      "gr-list gr-list gr-list";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:
-      256px
-      256px;
-  }
-
-  .benefits-item__image {
-    grid-area: gr-image;
-  }
-
-  @media (min-width: $tablet-width) {
-    .benefits-item__image {
-      width: 512px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .benefits-item__image {
-      width: 800px;
-    }
-  }
-
   .benefits-item--reverse {
     display: flex;
     flex-direction: row-reverse;

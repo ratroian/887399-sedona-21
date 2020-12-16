@@ -4,11 +4,11 @@
   align-items: center;
   align-content: center;
   padding-bottom: 50px;
-  width: 100%;
+  min-width: 320px;
 }
 
 .selection__content {
-  background-color: #ffffff;
+  background-color: $text-color-nav;
 }
 
 @media (min-width: $tablet-width) {

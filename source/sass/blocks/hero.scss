@@ -8,7 +8,7 @@
 
 @media (min-width: $tablet-width) {
   .hero {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
@@ -19,8 +19,10 @@
 }
 
 .hero__image {
+  display: flex;
   width: 282px;
   height: 214px;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {

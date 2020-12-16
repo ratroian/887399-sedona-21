@@ -1,16 +1,14 @@
 .benefits {
-  width: 320px;
+  min-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
-  .benefits {
-    width: 768px;
+  .benefits__item:first-child {
+    width: 100%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .benefits {
-    width: 1200px;
+  .benefits__item:nth-child(2) {
+    width: 100%;
   }
 }
 
@@ -26,8 +24,4 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  // .benefits-image {
-  //   width: 512px;
-  // }
 }

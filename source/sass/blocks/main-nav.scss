@@ -1,7 +1,6 @@
 .main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: $text-color-nav;
   font-weight: 700;
   text-transform: uppercase;
@@ -13,7 +12,7 @@
 
 .main-nav__wrapper {
   display: none;
-  width: 320px;
+  min-width: 320px;
 }
 
 .main-nav__toggle {
@@ -27,8 +26,8 @@
   }
 
   .main-nav__wrapper {
-    display: block;
-    width: 768px;
+    display: flex;
+    width: 100%;
   }
 }
 
@@ -41,4 +40,8 @@
     display: block;
     width: 1200px;
   }
+}
+
+.main-nav__list {
+  width: 100%;
 }

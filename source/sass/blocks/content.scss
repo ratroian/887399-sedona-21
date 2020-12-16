@@ -11,17 +11,15 @@
   outline-offset: -5px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .content {
-//     width: 256px;
-//     // height: 256px;
-//   }
-// }
-
-
 .content--color {
   background-color: $background-content-focus;
   color: $text-color-button;
+}
+
+@media (min-width: $tablet-width) {
+  .content--color {
+    width: 33.33%;
+  }
 }
 
 .content__title {
