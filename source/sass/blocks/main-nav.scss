@@ -1,6 +1,4 @@
 .main-nav {
-  display: flex;
-  flex-direction: row;
   color: $text-color-nav;
   font-weight: 700;
   text-transform: uppercase;
@@ -32,10 +30,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav__wrapper {
     display: block;
     width: 1200px;

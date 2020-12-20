@@ -11,13 +11,6 @@
   min-width: 320px;
 }
 
-@media (min-width: $tablet-width) {
-  .title {
-    width: 100%;
-    align-items: center;
-  }
-}
-
 .title__header {
   font-weight: 700;
   font-size: 18px;

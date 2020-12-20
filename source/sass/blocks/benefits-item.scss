@@ -33,11 +33,3 @@
     flex-wrap: wrap;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .benefits-item--reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-  }
-}
