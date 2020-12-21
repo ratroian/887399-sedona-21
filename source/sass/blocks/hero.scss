@@ -1,5 +1,33 @@
 .hero {
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../../img/back-hero.jpg");
   background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    width: 1200px;
+  }
+}
+
+.hero__image {
+  display: flex;
+  width: 282px;
+  height: 214px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image {
+    width: 460px;
+    height: 350px;
+  }
 }

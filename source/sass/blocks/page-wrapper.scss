@@ -1,0 +1,12 @@
+.page-wrapper {
+  background-color: $background-page-content;
+}
+
+@media (min-width: $desktop-width) {
+  .page-wrapper {
+    width: 1200px;
+    box-shadow: $page-shadow;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -5,4 +5,27 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2.22;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .site-list__item {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    max-width: 1200px;
+  }
 }

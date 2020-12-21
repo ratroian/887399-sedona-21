@@ -1,3 +1,35 @@
 .benefits-item {
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .benefits-item {
+    width: 33.33%;
+  }
+}
+
+.benefits-item__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-item__content {
+  width: 100%;
+}
+
+.benefits-item__image {
+  min-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item__image {
+    min-width: 66.66%;
+  }
+
+  .benefits-item--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+}

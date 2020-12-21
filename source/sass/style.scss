@@ -1,6 +1,7 @@
 // global
 @import "global/fonts.scss";
 @import "global/color.scss";
+@import "global/viewports.scss";
 
 // blocks
 @import "blocks/page-header.scss";
@@ -33,3 +34,4 @@
 @import "blocks/like-meter.scss";
 @import "blocks/gallery.scss";
 @import "blocks/presentation.scss";
+@import "blocks/page-wrapper.scss";

@@ -16,6 +16,12 @@
   color: $text-color-button;
 }
 
+@media (min-width: $tablet-width) {
+  .content--color {
+    width: 33.33%;
+  }
+}
+
 .content__title {
   font-size: 18px;
   padding-top: 0;
