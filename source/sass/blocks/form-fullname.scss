@@ -1,12 +1,6 @@
-.form-rating {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.44;
-}
-
 @media (min-width: $tablet-width) {
-  .form-rating {
-    order: -2;
+  .form-fullname {
+    order: -1;
     width: 50%;
     margin: 0;
     padding: 0;

@@ -3,6 +3,9 @@
   color: $content-text-color;
   font-size: 14px;
   line-height: 1.86;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
 }
 
 .textarea__input {
@@ -14,4 +17,6 @@
   background-color: $background-form-input;
   margin-bottom: 50px;
   font-family: "PT Sans", sans-serif;
+  width: 100%;
+  min-height: 160px;
 }

@@ -1,3 +1,33 @@
+@media (min-width: $desktop-width) {
+  .text-field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.text-field--column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.text-field__title {
+  width: 100%;
+}
+
+.text-field__element {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .text-field__element {
+    flex-direction: row;
+    width: 50%;
+  }
+}
+
 .text-field__label {
   text-transform: uppercase;
   color: $content-text-color;
@@ -12,6 +42,9 @@
   background-color: $background-form-input;
   border: none;
   font-family: "PT Sans", sans-serif;
+  width: auto;
+  height: 58px;
+  padding: 0;
 }
 
 .text-field__input::placeholder {
