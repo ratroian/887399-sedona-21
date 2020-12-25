@@ -1,5 +1,12 @@
 .page-wrapper {
   background-color: $background-page-content;
+  min-width: 320px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-wrapper {
+    min-width: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {
