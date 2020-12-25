@@ -1,3 +1,20 @@
+@media (min-width: $tablet-width) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 76px;
+  }
+}
+
 .presentation__intro {
   line-height: 1.71;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation__intro {
+    max-width: 444px;
+    margin: auto 0;
+  }
 }
