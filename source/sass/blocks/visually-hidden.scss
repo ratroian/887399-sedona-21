@@ -1,5 +1,10 @@
 .visually-hidden {
-  visibility: hidden;
-  width: 1px;
-  height: 1px;
+  // stylelint-disable declaration-no-important
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }

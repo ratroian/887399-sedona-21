@@ -1,0 +1,31 @@
+.form-location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $desktop-width) {
+  .form-location {
+    justify-content: space-between;
+  }
+}
+
+.form-location__title {
+  width: 100%;
+}
+
+.form-location__checkbox {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form-location__checkbox {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-location__checkbox {
+    width: auto;
+  }
+}
