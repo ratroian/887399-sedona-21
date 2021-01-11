@@ -2,10 +2,9 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  padding-top: 36px;
   display: flex;
   flex-direction: column;
-  outline: 5px solid rgba(115, 255, 0, 0.7);
-  outline-offset: -5px;
   width: 100%;
 }
 
@@ -13,5 +12,6 @@
   .services-list {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }

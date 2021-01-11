@@ -1,0 +1,13 @@
+.nav-link {
+  text-decoration: none;
+  color: $text-color-nav;
+  position: relative;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-link {
+    color: $content-title-color;
+  }
+}
+

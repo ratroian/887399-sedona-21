@@ -1,5 +1,6 @@
 .benefits-item {
   text-decoration: none;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,3 +34,18 @@
     flex-wrap: wrap;
   }
 }
+
+.benefits-item:nth-child(4)::before,
+.benefits-item:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: $delimiter-color;
+  left: 6%;
+}
+
+.benefits-item:nth-child(4)::after {
+  top: 99%;
+}
+

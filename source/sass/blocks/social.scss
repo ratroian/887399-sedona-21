@@ -3,12 +3,16 @@
   flex-direction: row;
   text-decoration: none;
   list-style: none;
-}
-
-.social__link {
-  background-color: $background-socials;
+  align-items: center;
+  padding: 36px 0 40px 0;
 }
 
 .social__item {
-  padding-right: 20px;
+  margin-right: 6px;
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-socials;
 }

@@ -2,8 +2,70 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-left: 46px;
+  padding-left: 70px;
+  position: relative;
 }
+
+.services::before {
+  content: "";
+  width: 40px;
+  height: 37px;
+  background-image: url("../../img/icon-house.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 22px;
+  background-size: cover;
+}
+
+.services:nth-child(2)::before {
+  width: 32px;
+  height: 38px;
+  background-image: url("../../img/icon-gift.svg");
+  top: -10px;
+  left: 22px;
+}
+
+.services:nth-child(3)::before {
+  width: 40px;
+  height: 35px;
+  background-image: url("../../img/icon-burger.svg");
+  top: -10px;
+  left: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    padding-top: 158px;
+  }
+
+  .services:nth-child(2) {
+    order: 3;
+  }
+
+  .services::before {
+    left: 50%;
+    top: 26px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .services:nth-child(2)::before {
+    left: 50%;
+    top: 26px;
+    width: 76px;
+    height: 90px;
+  }
+
+  .services:nth-child(3)::before {
+    left: 50%;
+    top: 26px;
+    width: 78px;
+    height: 68px;
+  }
+}
+
 
 .services__text {
   font-weight: 700;
