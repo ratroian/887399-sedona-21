@@ -3,12 +3,31 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
+  padding-top: 32px;
   padding-bottom: 50px;
   min-width: 320px;
+  text-transform: uppercase;
 }
 
 .selection__content {
   background-color: $text-color-nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.selection__intro {
+  margin-top: 22px;
+  margin-bottom: 30px;
+  line-height: 1.71;
+}
+
+.selection__title {
+  font-size: 21px;
+  line-height: 1.24;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

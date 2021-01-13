@@ -5,8 +5,8 @@
   text-align: center;
   background-color: $background-content;
   text-transform: uppercase;
-  padding-top: 34px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,6 +20,8 @@
 .content--color {
   background-color: $background-content-focus;
   color: $text-color-button;
+  padding-top: 34px;
+  padding-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,10 +44,12 @@
 }
 
 .content__number {
-  padding-top: 22px;
-  padding-bottom: 26px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  // padding-top: 22px;
+  // padding-bottom: 26px;
   position: relative;
-  margin: 0;
+  // margin: 0;
 }
 
 .content__number::before,

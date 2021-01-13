@@ -18,7 +18,17 @@
   display: flex;
   justify-content: center;
   box-shadow: $border-shadow-top;
+  height: 56px;
 }
+
+// .site-list__item:hover {
+//   background-color: $mobile-menu-item-hover;
+// }
+
+// .site-list__item:active {
+//   background-color: $mobile-menu-item-active;
+//   color: 0px 1px 0px rgba(1, 1, 1, 0.2);
+// }
 
 @media (min-width: $tablet-width) {
   .site-list {

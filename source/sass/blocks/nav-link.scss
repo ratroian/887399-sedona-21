@@ -3,6 +3,18 @@
   color: $text-color-nav;
   position: relative;
   display: block;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.nav-link:hover {
+  background-color: $mobile-menu-item-hover;
+}
+
+.nav-link:active {
+  background-color: $mobile-menu-item-active;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -10,4 +22,3 @@
     color: $content-title-color;
   }
 }
-

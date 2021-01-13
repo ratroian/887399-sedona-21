@@ -5,12 +5,12 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  margin-bottom: 56px;
 }
 
 .main-nav__wrapper {
-  display: none;
+  display: block;
   min-width: 320px;
-  // height: 56px;
   z-index: 3;
 }
 

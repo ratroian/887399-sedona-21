@@ -5,14 +5,14 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  height: 56px;
+  min-height: 56px;
   width: 100%;
   position: relative;
 }
 
 .page-header__link {
   position: absolute;
-  top: 0;
+  bottom: -28px;
   right: 50%;
   transform: translate(50%, 0);
 }
