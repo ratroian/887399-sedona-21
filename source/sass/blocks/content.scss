@@ -27,6 +27,7 @@
 @media (min-width: $tablet-width) {
   .content--color {
     width: 33.33%;
+    padding-top: 40px;
   }
 }
 
@@ -46,10 +47,7 @@
 .content__number {
   margin-top: 12px;
   margin-bottom: 20px;
-  // padding-top: 22px;
-  // padding-bottom: 26px;
   position: relative;
-  // margin: 0;
 }
 
 .content__number::before,

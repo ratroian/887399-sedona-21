@@ -8,3 +8,10 @@
   justify-content: space-around;
   padding-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 0;
+    align-items: center;
+  }
+}
