@@ -1,3 +1,10 @@
+.form-fullname__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.44;
+}
+
 @media (min-width: $tablet-width) {
   .form-fullname {
     order: -1;
