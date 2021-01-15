@@ -62,7 +62,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
+  top: 16px;
   right: 22px;
   left: auto;
   background-color: $background-button;
@@ -72,8 +72,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 26px;
-    right: -4px;
+    top: 10px;
+    right: -3px;
     width: 28px;
     height: 4px;
     background-color: $background-page-content;

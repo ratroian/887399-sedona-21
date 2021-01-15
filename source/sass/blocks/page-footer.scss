@@ -16,3 +16,10 @@
     padding-left: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    justify-content: space-between;
+    padding: 36px 114px;
+  }
+}

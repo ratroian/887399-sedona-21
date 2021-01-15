@@ -9,6 +9,15 @@
   padding-bottom: 22px;
 }
 
+.copyright__link:hover svg path {
+  fill: $background-content-focus;
+}
+
+.copyright__link:active svg path {
+  fill: $content-title-color;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     padding-bottom: 0;

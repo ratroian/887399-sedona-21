@@ -25,5 +25,29 @@
     align-items: center;
     padding-top: 0;
     color: $content-title-color;
+
+
+    &:hover {
+      color: $background-content-focus;
+      background-color: $background-page-content;
+    }
+
+    &:active {
+      color: $content-title-color;
+      opacity: 0.3;
+    }
+  }
+
+  .nav-link--active {
+    color: $nav-link-active;
+
+    &:hover {
+      color: $nav-link-active-hover;
+    }
+
+    &:active {
+      color: $nav-link-active;
+      opacity: 0.3;
+    }
   }
 }

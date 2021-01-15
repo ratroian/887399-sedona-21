@@ -33,7 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .selection__content {
-    width: 458px;
+    width: 80%;
   }
 }
 
@@ -47,6 +47,13 @@
   .selection__intro {
     margin-top: 34px;
     margin-bottom: 38px;
+    width: 69%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__intro {
+    width: 44%;
   }
 }
 

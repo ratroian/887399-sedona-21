@@ -56,3 +56,29 @@
 .benefits-item:nth-child(4)::after {
   top: 99%;
 }
+
+
+.benefits-item--mask {
+  padding-top: 34px;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item--mask {
+    padding-top: 0;
+  }
+}
+
+.benefits-item__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $background-content-focus;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item__mask {
+    display: none;
+  }
+}
