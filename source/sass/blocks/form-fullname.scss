@@ -5,6 +5,12 @@
   line-height: 1.44;
 }
 
+.form-fullname__element {
+  margin-top: 24px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .form-fullname {
     order: -1;
