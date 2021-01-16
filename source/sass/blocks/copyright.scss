@@ -1,4 +1,26 @@
 .copyright {
   text-transform: uppercase;
   line-height: 1.86;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: 148px;
+  justify-content: space-around;
+  padding-bottom: 22px;
+}
+
+.copyright__link:hover svg path {
+  fill: $background-content-focus;
+}
+
+.copyright__link:active svg path {
+  fill: $content-title-color;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 0;
+    align-items: center;
+  }
 }

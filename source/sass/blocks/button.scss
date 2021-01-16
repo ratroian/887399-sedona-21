@@ -6,4 +6,20 @@
   line-height: 1.24;
   font-weight: 700;
   text-decoration: none;
+  padding: 14px 50px 18px 50px;
+
+  &:hover {
+    background-color: $mobile-menu-item-hover;
+  }
+
+  &:active {
+    background-color: $mobile-menu-item-active;
+    color: $opacity-text-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 14px 136px 18px 136px;
+  }
 }

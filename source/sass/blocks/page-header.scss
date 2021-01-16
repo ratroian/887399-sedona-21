@@ -2,10 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   margin: 0;
   padding: 0;
-  height: 84px;
+  min-height: 56px;
   width: 100%;
+  position: relative;
+}
+
+.page-header__link {
+  position: absolute;
+  bottom: -28px;
+  right: 50%;
+  transform: translate(50%, 0);
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +26,7 @@
   .page-header__nav {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
   .page-header__link {

@@ -1,5 +1,6 @@
 .benefits-item {
   text-decoration: none;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,6 +21,7 @@
 
 .benefits-item__image {
   min-width: 100%;
+  height: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,5 +33,52 @@
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+  }
+}
+
+.benefits-item:nth-child(4)::before,
+.benefits-item:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 88%;
+  height: 1px;
+  background-color: $delimiter-color;
+  left: 6%;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item:nth-child(4)::before,
+  .benefits-item:nth-child(4)::after {
+    height: 0;
+  }
+}
+
+.benefits-item:nth-child(4)::after {
+  top: 99%;
+}
+
+
+.benefits-item--mask {
+  padding-top: 34px;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item--mask {
+    padding-top: 0;
+  }
+}
+
+.benefits-item__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $background-content-focus;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item__mask {
+    display: none;
   }
 }

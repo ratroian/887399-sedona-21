@@ -5,20 +5,36 @@
   text-align: center;
   background-color: $background-content;
   text-transform: uppercase;
-  padding-top: 40px;
-  padding-bottom: 32px;
-  outline: 5px solid rgba(255, 0, 106, 0.7);
-  outline-offset: -5px;
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .content {
+    min-height: 256px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
 }
 
 .content--color {
   background-color: $background-content-focus;
   color: $text-color-button;
+  padding-top: 34px;
+  padding-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
   .content--color {
     width: 33.33%;
+    padding-top: 40px;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content--color {
+    padding-top: 45px;
   }
 }
 
@@ -28,12 +44,68 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .content__title {
+    font-size: 21px;
+    width: 60%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content__title {
+    width: 38%;
+  }
+}
+
 .content__number {
-  padding-top: 22px;
-  padding-bottom: 26px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.content__number::before,
+.content__number::after {
+  content: "";
+  height: 1px;
+  width: 10px;
+  background-color: $content-text-color;
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+}
+
+.content__number::before {
+  left: -70%;
+}
+
+.content__number::after {
+  left: 120%;
+}
+
+.content--color .content__number::before,
+.content--color .content__number::after {
+  background-color: $text-color-button;
 }
 
 .content__intro {
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .content__intro {
+    width: 74%;
+    line-height: 1.5;
+  }
+}
+
+.content__intro--small {
+  width: 80%;
+}
+
+
+@media (min-width: $tablet-width) {
+  .content__intro--small {
+    width: 69%;
+  }
 }

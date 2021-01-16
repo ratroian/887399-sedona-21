@@ -9,6 +9,17 @@
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
     justify-content: space-between;
+    padding: 36px 114px;
   }
 }

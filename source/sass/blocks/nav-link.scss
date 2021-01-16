@@ -1,0 +1,53 @@
+.nav-link {
+  text-decoration: none;
+  color: $text-color-nav;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.nav-link:hover {
+  background-color: $mobile-menu-item-hover;
+}
+
+.nav-link:active {
+  background-color: $mobile-menu-item-active;
+  color: $opacity-text-active;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    color: $content-title-color;
+
+
+    &:hover {
+      color: $background-content-focus;
+      background-color: $background-page-content;
+    }
+
+    &:active {
+      color: $content-title-color;
+      opacity: 0.3;
+    }
+  }
+
+  .nav-link--active {
+    color: $nav-link-active;
+
+    &:hover {
+      color: $nav-link-active-hover;
+    }
+
+    &:active {
+      color: $nav-link-active;
+      opacity: 0.3;
+    }
+  }
+}

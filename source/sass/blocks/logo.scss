@@ -1,7 +1,30 @@
 .logo {
   width: 102px;
   height: 84px;
-  position: absolute;
-  top: 0;
-  right: 50%;
+  z-index: 4;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    z-index: 4;
+  }
+}
+
+.logo__logo-image {
+  position: relative;
+}
+
+
+.logo__logo-substrate {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .logo__logo-substrate {
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    z-index: -1;
+  }
 }
