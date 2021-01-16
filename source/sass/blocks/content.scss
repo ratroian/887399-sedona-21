@@ -94,7 +94,18 @@
 
 @media (min-width: $tablet-width) {
   .content__intro {
-    width: 69%;
+    width: 74%;
     line-height: 1.5;
+  }
+}
+
+.content__intro--small {
+  width: 80%;
+}
+
+
+@media (min-width: $tablet-width) {
+  .content__intro--small {
+    width: 69%;
   }
 }

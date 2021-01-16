@@ -4,8 +4,20 @@
   flex-wrap: wrap;
   margin: 0;
   padding-left: 20px;
-  width: 85%;
+  width: 92%;
   padding-top: 20px;
+
+  &:first-child {
+    padding-top: 25px;
+  }
+
+  &:nth-child(2) {
+    padding-left: 23px;
+  }
+
+  &:last-child {
+    padding-top: 18px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,11 +27,24 @@
     align-items: center;
     padding-left: 0;
     width: 28%;
+
+    &:first-child {
+      padding-top: 74px;
+    }
+
+    &:last-child {
+      padding-top: 74px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      padding-left: 0;
+    }
   }
 
-  .services:nth-child(2) {
-    order: 3;
-  }
+  // .services:nth-child(2) {
+  //   order: 3;
+  // }
 }
 
 @media (min-width: $tablet-width) {
