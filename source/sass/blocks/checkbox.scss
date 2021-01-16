@@ -1,4 +1,32 @@
+.checkbox {
+  position: relative;
+  padding: 21px 0;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 16px;
+  // border-radius: 5%;
+  background-image: url("../../img/checkbox-checked.svg");
+  top: 36%;
+  left: 14px;
+}
+
 .checkbox__label {
   font-weight: 700;
   font-size: 18px;
+  padding-left: 74px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 5%;
+    background-color: $background-form-input;
+    top: 7%;
+    left: -4px;
+  }
 }
