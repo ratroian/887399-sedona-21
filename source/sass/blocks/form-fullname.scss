@@ -1,3 +1,9 @@
+.form-fullname {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .form-fullname__title {
   margin: 0;
   padding: 0;
@@ -6,9 +12,8 @@
 }
 
 .form-fullname__element {
-  margin-top: 24px;
+  margin-top: 22px;
   margin-bottom: 0;
-  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {

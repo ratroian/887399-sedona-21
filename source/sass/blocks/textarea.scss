@@ -3,9 +3,7 @@
   color: $content-text-color;
   font-size: 14px;
   line-height: 1.86;
-  visibility: hidden;
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 
 .textarea__input {
@@ -15,8 +13,10 @@
   color: $content-title-color;
   border: none;
   background-color: $background-form-input;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   font-family: "PT Sans", sans-serif;
   width: 100%;
   min-height: 160px;
+  padding: 14px 22px 30px 20px;
+  margin-top: 14px;
 }

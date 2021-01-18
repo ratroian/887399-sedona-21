@@ -23,10 +23,10 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a href="index.html">Главная</a></li>
-              <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
-              <li class="site-list__item site-list__item--active"><a href="">Форма отзыва</a></li>
-              <li class="site-list__item"><a href="">HTML Academy</a></li>
+              <li class="site-list__item"><a class="nav-link" href="index.html">Главная</a></li>
+              <li class="site-list__item"><a class="nav-link" href="catalog.html">Фото и видео</a></li>
+              <li class="site-list__item site-list__item--active"><a class="nav-link" href="">Форма отзыва</a></li>
+              <li class="site-list__item"><a class="nav-link" href="">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
@@ -47,33 +47,43 @@
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__element form-fullname">
-            <h3 class="form-fullname__title title">Представьтесь:</h3>
+            <h3 class="form-fullname__title form-heading">Представьтесь:</h3>
             <div class="form-fullname__element text-field">
               <label class="text-field__label" for="username">Имя*:</label>
-              <input class="text-field__input" type="text" name="username" id="username" placeholder="Имя">
+              <div class="text-field-wrapper">
+                <input class="text-field__input" type="text" name="username" id="username" placeholder="Петр">
+              </div>
             </div>
             <div class="form-fullname__element text-field">
               <label class="text-field__label" for="lastname">Фамилия*:</label>
-              <input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+              <div class="text-field-wrapper">
+                <input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Иванов">
+              </div>
             </div>
             <div class="form-fullname__element text-field">
               <label class="text-field__label" for="middlename">Отчество:</label>
-              <input class="text-field__input" type="text" name="middlename" id="middlename" placeholder="Отчество">
+              <div class="text-field-wrapper">
+                <input class="text-field__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__element text-field">
-            <h3 class="text-field__title title">Контактная информация:</h3>
+            <h3 class="text-field__title form-heading">Контактная информация:</h3>
             <div class="text-field__element text-field__element--column">
-              <label class="text-field__label" for="tel">Контактный телефон*:</label>
-              <input class="text-field__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+              <label class="text-field__label text-field__label--column" for="tel">Контактный телефон*:</label>
+              <div class="text-field-wrapper">
+                <input class="text-field__input text-field__input--tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+              </div>
             </div>
             <div class="text-field__element text-field__element--column">
-              <label class="text-field__label" for="email">Электронная почта*:</label>
-              <input class="text-field__input" type="email" id="email" name="email" placeholder="Введите e-mail " required>
+              <label class="text-field__label text-field__label--column" for="email">Электронная почта*:</label>
+              <div class="text-field-wrapper">
+                <input class="text-field__input text-field__input--mail" type="email" id="email" name="email" placeholder="Введите e-mail " required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__element form-rating">
-            <h3 class="form-rating__title title">Ваше общее впечатление:</h3>
+            <h3 class="form-rating__title form-heading form-heading--radio">Ваше общее впечатление:</h3>
             <div class="form-rating__radio radio">
               <input class="radio__button visually-hidden" type="radio" name="product-group" value="adaptive" id="filter-positive">
               <label class="radio__label" for="filter-positive">Скорее положительное</label>
@@ -88,7 +98,7 @@
             </div>
           </fieldset>
           <fieldset class="form__element form-location">
-            <h3 class="form-location__title title">Посещенные достопримечательности:</h3>
+            <h3 class="form-location__title form-heading form-heading--checkbox">Посещенные достопримечательности:</h3>
             <div class="form-location__checkbox checkbox">
               <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
               <label class="checkbox__label" for="filter-devils-bridge">Мост Дьявола</label>
@@ -107,7 +117,7 @@
             </div>
           </fieldset>
           <fieldset class="form__element form-comment">
-            <h3 class="form-comment__title title">Опишите свои эмоции:</h3>
+            <h3 class="form-comment__title form-heading">Опишите свои эмоции:</h3>
             <div class="form-comment__textarea textarea">
               <label class="textarea__label" for="massage-field">Текст письма:</label>
               <textarea class="textarea__input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>

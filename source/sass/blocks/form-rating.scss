@@ -2,6 +2,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,4 +13,8 @@
     padding: 0;
     align-items: center;
   }
+}
+
+.form-rating__title {
+  margin-bottom: 20px;
 }

@@ -69,16 +69,6 @@
 .title--subpage {
   padding-bottom: 17px;
   padding-top: 36px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: $background-page-wrapper;
-    bottom: 1px;
-  }
 }
 
 .title__header--subpage {
