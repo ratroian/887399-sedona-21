@@ -1,11 +1,6 @@
 .form {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // padding-top: 20px;
   width: 100%;
   margin: 0 auto;
-  // padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,8 +9,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    // padding-top: 70px;
     padding: 70px 62px 0 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 40px 120px 0 120px;
   }
 }
 
@@ -30,7 +30,6 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 0;
-  // bottom: 20px;
 
   &::before {
     content: "";
@@ -62,17 +61,10 @@
   margin: 0 auto 38px auto;
 }
 
-// @media (min-width: $tablet-width) {
-//   .form__element--contact {
-//     padding: 40px 0 0 0;
-//   }
-// }
-
 @media (min-width: $tablet-width) {
   .form__element--button {
     width: 324px;
     padding-left: 64px;
-    // position: relative;
     margin-bottom: 62px;
   }
 }
@@ -80,6 +72,8 @@
 @media (min-width: $desktop-width) {
   .form__element--button {
     width: 480px;
+    padding-left: 148px;
+    margin-bottom: 70px;
   }
 }
 
@@ -91,11 +85,14 @@
   .form__element--footnote {
     display: block;
     text-transform: uppercase;
-    // position: absolute;
-    // right: 46px;
-    // line-height: 1.86;
     width: auto;
     padding: 22px 0 0 160px;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__element--footnote {
+    padding: 22px 0 0 320px;
   }
 }

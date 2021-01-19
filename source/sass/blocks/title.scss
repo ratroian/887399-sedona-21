@@ -6,7 +6,6 @@
   padding-top: 20px;
   padding-bottom: 0;
   text-transform: uppercase;
-  // min-width: 320px;
   height: auto;
   line-height: 1.86;
 }
@@ -77,6 +76,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .title--subpage {
+    padding-top: 114px;
+  }
+}
+
 .title__header--subpage {
   padding-top: 0;
 }
@@ -100,5 +105,13 @@
     font-size: 14px;
     line-height: 1.71;
     padding: 6px 126px 0 126px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title__text--subpage {
+    font-size: 14px;
+    line-height: 1.71;
+    padding: 6px 320px 0 320px;
   }
 }

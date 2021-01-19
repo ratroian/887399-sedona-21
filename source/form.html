@@ -71,16 +71,18 @@
           </fieldset>
           <fieldset class="form__element text-field text-field--contact">
             <h3 class="text-field__title form-heading form-heading--delimiter">Контактная информация:</h3>
-            <div class="text-field__element text-field__element--column">
-              <label class="text-field__label text-field__label--column" for="tel">Контактный телефон*:</label>
-              <div class="text-field-wrapper text-field-wrapper--tel">
-                <input class="text-field__input text-field__input--tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+            <div class="text-field__wrapper">
+              <div class="text-field__element text-field__element--column">
+                <label class="text-field__label text-field__label--column" for="tel">Контактный телефон*:</label>
+                <div class="text-field-wrapper text-field-wrapper--tel">
+                  <input class="text-field__input text-field__input--tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+                </div>
               </div>
-            </div>
-            <div class="text-field__element text-field__element--column text-field__element--mail">
-              <label class="text-field__label text-field__label--column" for="email">Электронная почта*:</label>
-              <div class="text-field-wrapper text-field-wrapper--mail">
-                <input class="text-field__input text-field__input--mail" type="email" id="email" name="email" placeholder="Введите e-mail " required>
+              <div class="text-field__element text-field__element--column text-field__element--mail">
+                <label class="text-field__label text-field__label--column text-field__label--nowrap" for="email">Электронная почта*:</label>
+                <div class="text-field-wrapper text-field-wrapper--mail">
+                  <input class="text-field__input text-field__input--mail" type="email" id="email" name="email" placeholder="Введите e-mail " required>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -168,5 +170,17 @@
         </div>
       </footer>
     </div>
+    <section class="popup popup--succes">
+      <h4 class="popup__title popup__title--succes">Ваш отзыв отправлен!</h4>
+      <div class="popup__text popup__text--succes">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</div>
+      <div class="popup__wrapper popup__wrapper--succes">
+        <a class="popup__button--succes button">ЗАКРЫТЬ ОКНО</a>
+      </div>
+    </section>
+    <section class="popup">
+      <h4 class="popup__title popup-fail__title">Что-то пошло не так!</h4>
+      <div class="popup__text popup-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+      <a class="popup__button popup-fail__button button">OK</a>
+    </section>
   </body>
 </html>

@@ -21,6 +21,10 @@
   left: -4px;
 }
 
+.radio__label:active::after {
+  opacity: 0.3;
+}
+
 .radio__label {
   padding-left: 54px;
 
@@ -34,16 +38,20 @@
     top: 10%;
     left: -22px;
   }
+
+  &:hover::before {
+    background-color: $background-form-input-hover;
+  }
+
+  &:active::before {
+    background-color: $background-form-radio-active;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .radio__label {
-    // padding-left: 74px;
-
-    &::before {
-      top: 10%;
-      left: 0;
-    }
+  .radio__label::before {
+    top: 10%;
+    left: 0;
   }
 }
 

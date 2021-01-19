@@ -7,3 +7,12 @@
     padding-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 100%;
+  }
+}

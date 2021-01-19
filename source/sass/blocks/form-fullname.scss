@@ -1,9 +1,3 @@
-.form-fullname {
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-}
-
 @media (min-width: $tablet-width) {
   .form-fullname {
     order: -1;
@@ -26,6 +20,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-fullname {
+    padding-left: 80px;
+  }
+}
+
 .form-fullname__title {
   margin: 0;
   padding: 0;
@@ -37,4 +37,3 @@
   margin-top: 22px;
   margin-bottom: 0;
 }
-

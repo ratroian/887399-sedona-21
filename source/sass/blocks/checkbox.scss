@@ -15,10 +15,13 @@
   content: "";
   width: 24px;
   height: 16px;
-  // border-radius: 5%;
   background-image: url("../../img/checkbox-checked.svg");
   top: 36%;
   left: 14px;
+}
+
+.checkbox__label:active::after {
+  opacity: 0.3;
 }
 
 .checkbox__label {
@@ -35,5 +38,13 @@
     background-color: $background-form-input;
     top: 7%;
     left: -4px;
+  }
+
+  &:hover::before {
+    background-color: $background-form-input-hover;
+  }
+
+  &:active::before {
+    background-color: $background-form-radio-active;
   }
 }

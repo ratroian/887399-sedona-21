@@ -18,6 +18,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-heading--radio {
+    margin-left: 80px;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .form-heading {
@@ -35,7 +41,6 @@
 @media (min-width: $tablet-width) {
   .form-heading--checkbox {
     margin: 0 auto;
-    // padding: 0 120px;
   }
 }
 
@@ -56,6 +61,20 @@
 
     &::after {
       left: 342px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-heading--delimiter {
+    &::before,
+    &::after {
+      width: 280px;
+      left: -349px;
+    }
+
+    &::after {
+      left: 332px;
     }
   }
 }
