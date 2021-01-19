@@ -47,37 +47,39 @@
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__element form-fullname">
-            <h3 class="form-fullname__title form-heading">Представьтесь:</h3>
-            <div class="form-fullname__element text-field">
-              <label class="text-field__label" for="username">Имя*:</label>
-              <div class="text-field-wrapper">
-                <input class="text-field__input" type="text" name="username" id="username" placeholder="Петр">
+            <h3 class="form-fullname__title form-heading form-heading--fullname">Представьтесь:</h3>
+            <div class="fullname-wrapper">
+              <div class="form-fullname__element text-field">
+                <label class="text-field__label" for="username">Имя*:</label>
+                <div class="text-field-wrapper">
+                  <input class="text-field__input" type="text" name="username" id="username" placeholder="Петр">
+                </div>
               </div>
-            </div>
-            <div class="form-fullname__element text-field">
-              <label class="text-field__label" for="lastname">Фамилия*:</label>
-              <div class="text-field-wrapper">
-                <input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Иванов">
+              <div class="form-fullname__element text-field">
+                <label class="text-field__label" for="lastname">Фамилия*:</label>
+                <div class="text-field-wrapper">
+                  <input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Иванов">
+                </div>
               </div>
-            </div>
-            <div class="form-fullname__element text-field">
-              <label class="text-field__label" for="middlename">Отчество:</label>
-              <div class="text-field-wrapper">
-                <input class="text-field__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
+              <div class="form-fullname__element text-field">
+                <label class="text-field__label" for="middlename">Отчество:</label>
+                <div class="text-field-wrapper">
+                  <input class="text-field__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
+                </div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__element text-field">
-            <h3 class="text-field__title form-heading">Контактная информация:</h3>
+          <fieldset class="form__element text-field text-field--contact">
+            <h3 class="text-field__title form-heading form-heading--delimiter">Контактная информация:</h3>
             <div class="text-field__element text-field__element--column">
               <label class="text-field__label text-field__label--column" for="tel">Контактный телефон*:</label>
-              <div class="text-field-wrapper">
+              <div class="text-field-wrapper text-field-wrapper--tel">
                 <input class="text-field__input text-field__input--tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
               </div>
             </div>
-            <div class="text-field__element text-field__element--column">
+            <div class="text-field__element text-field__element--column text-field__element--mail">
               <label class="text-field__label text-field__label--column" for="email">Электронная почта*:</label>
-              <div class="text-field-wrapper">
+              <div class="text-field-wrapper text-field-wrapper--mail">
                 <input class="text-field__input text-field__input--mail" type="email" id="email" name="email" placeholder="Введите e-mail " required>
               </div>
             </div>
@@ -98,32 +100,37 @@
             </div>
           </fieldset>
           <fieldset class="form__element form-location">
-            <h3 class="form-location__title form-heading form-heading--checkbox">Посещенные достопримечательности:</h3>
-            <div class="form-location__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
-              <label class="checkbox__label" for="filter-devils-bridge">Мост Дьявола</label>
-            </div>
-            <div class="form-location__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-mount-bell" value="mount-bell" checked>
-              <label class="checkbox__label" for="filter-mount-bell">Гора-Колокол</label>
-            </div>
-            <div class="form-location__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-slide-park" value="slide-park" checked>
-              <label class="checkbox__label" for="filter-slide-park">Слайд-парк</label>
-            </div>
-            <div class="form-location__checkbox checkbox">
-              <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-red-rocks" value="red-rocks">
-              <label class="checkbox__label" for="filter-red-rocks">Красные скалы</label>
+            <h3 class="form-location__title form-heading form-heading--checkbox form-heading--delimiter">Посещенные<br> достопримечательности:</h3>
+            <div class="checkbox-wrapper">
+              <div class="form-location__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
+                <label class="checkbox__label" for="filter-devils-bridge">Мост Дьявола</label>
+              </div>
+              <div class="form-location__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-mount-bell" value="mount-bell" checked>
+                <label class="checkbox__label" for="filter-mount-bell">Гора-Колокол</label>
+              </div>
+              <div class="form-location__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-slide-park" value="slide-park" checked>
+                <label class="checkbox__label" for="filter-slide-park">Слайд-парк</label>
+              </div>
+              <div class="form-location__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-red-rocks" value="red-rocks">
+                <label class="checkbox__label" for="filter-red-rocks">Красные скалы</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__element form-comment">
-            <h3 class="form-comment__title form-heading">Опишите свои эмоции:</h3>
+            <h3 class="form-comment__title form-heading form-heading--delimiter">Опишите свои эмоции:</h3>
             <div class="form-comment__textarea textarea">
               <label class="textarea__label" for="massage-field">Текст письма:</label>
               <textarea class="textarea__input" name="massage" id="massage-field" placeholder="В свободной форме">Опишите подробно все свои восторги</textarea>
             </div>
           </fieldset>
-          <button class="form__element form__element--button button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
+          <div class="button-wrapper">
+            <button class="form__element form__element--button button" type="submit" value="Отправить">ОТПРАВИТЬ ОТЗЫВ</button>
+            <span class="form__element form__element--footnote">* — обязательные поля</span>
+          </div>
         </form>
 
       </main>

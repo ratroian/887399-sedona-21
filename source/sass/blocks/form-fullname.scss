@@ -1,7 +1,29 @@
 .form-fullname {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .form-fullname {
+    order: -1;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    padding-left: 58px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 96%;
+      background-color: $delimiter-color;
+      left: 0;
+      top: 0;
+    }
+  }
 }
 
 .form-fullname__title {
@@ -16,12 +38,3 @@
   margin-bottom: 0;
 }
 
-@media (min-width: $tablet-width) {
-  .form-fullname {
-    order: -1;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
-}

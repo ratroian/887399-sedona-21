@@ -3,6 +3,7 @@
   font-size: 18px;
   line-height: 1.44;
   padding-bottom: 20px;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,7 +12,9 @@
     width: 50%;
     margin: 0;
     padding: 0;
-    align-items: center;
+    padding-left: 0;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 

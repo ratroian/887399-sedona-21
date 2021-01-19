@@ -71,8 +71,21 @@
   padding-top: 36px;
 }
 
+@media (min-width: $tablet-width) {
+  .title--subpage {
+    padding-top: 62px;
+  }
+}
+
 .title__header--subpage {
   padding-top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title__header--subpage {
+    font-size: 30px;
+    line-height: 0.87;
+  }
 }
 
 .title__text--subpage {
@@ -80,4 +93,12 @@
   margin-top: 28px;
   width: 90%;
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title__text--subpage {
+    font-size: 14px;
+    line-height: 1.71;
+    padding: 6px 126px 0 126px;
+  }
 }

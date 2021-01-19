@@ -1,6 +1,13 @@
 .checkbox {
   position: relative;
   padding: 21px 0;
+  min-width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    min-width: 0;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::after {

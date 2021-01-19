@@ -50,7 +50,21 @@
   height: 158px;
 }
 
+@media (min-width: $tablet-width) {
+  .hero--subpage {
+    height: 290px;
+  }
+}
+
 .hero__image--subpage {
   height: 40px;
   margin-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image--subpage {
+    width: 456px;
+    height: 78px;
+    margin-top: 94px;
+  }
 }
