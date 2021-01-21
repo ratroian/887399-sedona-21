@@ -6,7 +6,48 @@
   color: $content-title-color;
 }
 
+@media (min-width: $tablet-width) {
+  .like-meter {
+    min-width: 82px;
+  }
+}
+
 .like-meter__button {
   width: 22px;
   height: 22px;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .like-meter__button {
+    padding: 0 30px 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like-meter__button svg path {
+    fill: $text-color-nav;
+    opacity: 1;
+  }
+}
+
+.like-meter__likes {
+  margin-left: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .like-meter__likes {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like-meter__likes {
+    color: $text-color-nav;
+  }
 }

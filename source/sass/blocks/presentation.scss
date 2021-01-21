@@ -1,20 +1,55 @@
+.presentation {
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 54px;
+}
+
 @media (min-width: $tablet-width) {
   .presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto 76px;
+    padding: 14px 60px 42px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    padding: 20px 200px 84px 200px;
+  }
+}
+
+.presentation__slogan {
+  font-size: 18px;
+  line-height: 1.44;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation__slogan {
+    font-size: 30px;
+    line-height: 0.87;
   }
 }
 
 .presentation__intro {
   line-height: 1.71;
+  padding: 0 24px;
+  margin: 32px 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .presentation__intro {
-    max-width: 444px;
-    margin: auto 0;
+    padding: 0 94px 50px 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation__intro {
+    padding: 0 170px 50px 170px;
   }
 }

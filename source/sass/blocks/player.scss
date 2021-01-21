@@ -1,11 +1,127 @@
 .player {
-  height: 200px;
   width: 100%;
-  background-color: $background-page-wrapper;
+  position: relative;
+  padding-bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
   .player {
     height: 500px;
+  }
+}
+
+.player__video {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .player__video {
+    height: 500px;
+  }
+}
+
+.player__wrapper {
+  position: absolute;
+  bottom: -17px;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .player__wrapper {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 92px;
+  }
+}
+
+.player__wrapper-button {
+  background-color: $background-form-input;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 66px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .player__wrapper-button {
+    background-color: $background-gallery-and-player;
+    height: 100%;
+    padding: 0 32px;
+  }
+}
+
+.player__button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.player__button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 92px;
+}
+
+@media (min-width: $tablet-width) {
+  .player__button-group {
+    width: 100px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .player__button {
+    background-color: inherit;
+  }
+}
+
+.player__button--reverse {
+  height: 20px;
+  background: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .player__button--icon path {
+    fill: $text-color-button;
+  }
+}
+
+.player__button:hover {
+  .player__button--icon path {
+    fill: $content-text-color;
+  }
+
+  &:active {
+    .player__button--icon path {
+      fill: $content-text-color;
+      fill-opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .player__button:hover {
+    .player__button--icon path {
+      fill: $background-page-content;
+      fill-opacity: 0.6;
+    }
+
+    &:active {
+      .player__button--icon path {
+        fill: $background-page-content;
+        fill-opacity: 0.3;
+      }
+    }
   }
 }
