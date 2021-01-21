@@ -89,16 +89,19 @@
           <fieldset class="form__element form-rating">
             <h3 class="form-rating__title form-heading form-heading--radio">Ваше общее впечатление:</h3>
             <div class="form-rating__radio radio">
-              <input class="radio__button visually-hidden" type="radio" name="product-group" value="adaptive" id="filter-positive">
-              <label class="radio__label" for="filter-positive">Скорее положительное</label>
+              <input class="radio__button" type="radio" name="product-group" value="adaptive" id="filter-positive">
+              <label class="radio__label" for="filter-positive"></label>
+              <label class="radio__label-caption" for="filter-positive">Скорее положительное</label>
             </div>
             <div class="form-rating__radio radio">
               <input class="radio__button visually-hidden" type="radio" name="product-group" value="fixed" id="filter-negative" checked>
-              <label class="radio__label" for="filter-negative">Скорее отрицательное</label>
+              <label class="radio__label" for="filter-positive"></label>
+              <label class="radio__label-caption" for="filter-negative">Скорее отрицательное</label>
             </div>
             <div class="form-rating__radio radio">
               <input class="radio__button visually-hidden" type="radio" name="product-group" value="rubber" id="filter-unknow">
-              <label class="radio__label" for="filter-unknow">Затрудняюсь ответить</label>
+              <label class="radio__label" for="filter-positive"></label>
+              <label class="radio__label-caption" for="filter-unknow">Затрудняюсь ответить</label>
             </div>
           </fieldset>
           <fieldset class="form__element form-location">
@@ -106,19 +109,23 @@
             <div class="checkbox-wrapper">
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
-                <label class="checkbox__label" for="filter-devils-bridge">Мост Дьявола</label>
+                <label class="checkbox__label" for="filter-devils-bridge"></label>
+                <label class="checkbox__label-caption" for="filter-devils-bridge">Мост Дьявола</label>
               </div>
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-mount-bell" value="mount-bell" checked>
-                <label class="checkbox__label" for="filter-mount-bell">Гора-Колокол</label>
+                <label class="checkbox__label" for="filter-mount-bell"></label>
+                <label class="checkbox__label-caption" for="filter-mount-bell">Гора-Колокол</label>
               </div>
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-slide-park" value="slide-park" checked>
-                <label class="checkbox__label" for="filter-slide-park">Слайд-парк</label>
+                <label class="checkbox__label" for="filter-slide-park"></label>
+                <label class="checkbox__label-caption" for="filter-slide-park">Слайд-парк</label>
               </div>
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-red-rocks" value="red-rocks">
-                <label class="checkbox__label" for="filter-red-rocks">Красные скалы</label>
+                <label class="checkbox__label" for="filter-red-rocks"></label>
+                <label class="checkbox__label-caption" for="filter-red-rocks">Красные скалы</label>
               </div>
             </div>
           </fieldset>
@@ -174,10 +181,10 @@
       <h4 class="popup__title popup__title--succes">Ваш отзыв отправлен!</h4>
       <div class="popup__text popup__text--succes">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</div>
       <div class="popup__wrapper popup__wrapper--succes">
-        <a class="popup__button--succes button">ЗАКРЫТЬ ОКНО</a>
+        <a class="popup__button popup__button--succes button">ЗАКРЫТЬ ОКНО</a>
       </div>
     </section>
-    <section class="popup">
+    <section class="popup popup-fail">
       <h4 class="popup__title popup-fail__title">Что-то пошло не так!</h4>
       <div class="popup__text popup-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
       <a class="popup__button popup-fail__button button">OK</a>
