@@ -1,5 +1,9 @@
 .text-field-wrapper {
   width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .text-field-wrapper--tel,
@@ -19,13 +23,13 @@
   }
 }
 
-.text-field-wrapper--tel::after {
-  background-image: url("../../img/form-phone.svg");
-}
+// .text-field-wrapper--tel::after {
+//   background-image: url("../../img/form-phone.svg");
+// }
 
-.text-field-wrapper--mail::after {
-  background-image: url("../../img/form-mail.svg");
-}
+// .text-field-wrapper--mail::after {
+//   background-image: url("../../img/form-mail.svg");
+// }
 
 
 @media (min-width: $tablet-width) {

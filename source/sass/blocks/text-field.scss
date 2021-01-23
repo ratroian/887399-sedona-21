@@ -84,6 +84,7 @@
   // padding: 0;
   padding-left: 24px;
   flex-grow: 1;
+  position: relative;
 
   &:hover {
     background-color: $background-form-input-hover;
@@ -100,6 +101,13 @@
   .text-field__input {
     padding-left: 22px;
   }
+}
+
+.text-field__icon {
+  position: absolute;
+  right: 20px;
+  // top: 50%;
+  z-index: 2;
 }
 
 .text-field__input--tel,

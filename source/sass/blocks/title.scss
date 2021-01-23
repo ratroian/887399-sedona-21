@@ -115,3 +115,21 @@
     padding: 6px 320px 0 320px;
   }
 }
+
+.title--catalog {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .title--catalog {
+    padding-top: 62px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--catalog {
+    padding-top: 100px;
+  }
+}
