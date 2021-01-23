@@ -2,7 +2,6 @@
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
-  padding: 0;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -58,12 +57,13 @@
       width: 120px;
       height: 1px;
       background-color: $delimiter-color;
-      top: 43%;
+      top: 45%;
       left: 0;
     }
 
     &::after {
-      left: 526px;
+      left: auto;
+      right: 0;
     }
   }
 }
@@ -73,11 +73,6 @@
     &::before,
     &::after {
       width: 280px;
-      left: 0;
-    }
-
-    &::after {
-      left: 680px;
     }
   }
 }

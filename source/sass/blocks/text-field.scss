@@ -81,7 +81,7 @@
   font-family: "PT Sans", sans-serif;
   width: 100%;
   height: 58px;
-  padding: 0;
+  // padding: 0;
   padding-left: 24px;
   flex-grow: 1;
 
@@ -91,7 +91,8 @@
 
   &:focus {
     background-color: $background-page-content;
-    border: 4px solid $background-form-input-hover;
+    outline: 4px solid $background-form-input-hover;
+    outline-offset: -4px;
   }
 }
 
