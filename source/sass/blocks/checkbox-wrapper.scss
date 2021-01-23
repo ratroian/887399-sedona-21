@@ -1,0 +1,19 @@
+@media (min-width: $tablet-width) {
+  .checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 100%;
+    padding-top: 16px;
+  }
+}

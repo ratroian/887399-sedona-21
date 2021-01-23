@@ -1,0 +1,44 @@
+.text-field-wrapper {
+  width: 100%;
+}
+
+.text-field-wrapper--tel,
+.text-field-wrapper--mail {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: $background-form-input-icon;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 0;
+  }
+}
+
+.text-field-wrapper--tel::after {
+  background-image: url("../../img/form-phone.svg");
+}
+
+.text-field-wrapper--mail::after {
+  background-image: url("../../img/form-mail.svg");
+}
+
+
+@media (min-width: $tablet-width) {
+  .text-field-wrapper--tel {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-field-wrapper--tel,
+  .text-field-wrapper--mail {
+    margin: 0;
+    // padding: 0;
+  }
+}

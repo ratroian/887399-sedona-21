@@ -1,0 +1,78 @@
+.form-heading {
+  font-size: 18px;
+  line-height: 1.44;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.form-heading--radio {
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-heading--radio {
+    margin-bottom: 50px;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-heading--radio {
+    margin-left: 80px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-heading {
+    font-size: 21px;
+    line-height: 1.24;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-heading--fullname {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-heading--checkbox {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-heading--delimiter {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 1px;
+      background-color: $delimiter-color;
+      top: 45%;
+      left: 0;
+    }
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-heading--delimiter {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}

@@ -1,32 +1,36 @@
-.checkbox {
+.radio {
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.checkbox__input {
+@media (min-width: $tablet-width) {
+  .radio {
+    margin-bottom: 10px;
+  }
+}
+
+
+.radio__button {
   z-index: -1;
   opacity: 0;
   position: absolute;
 
-  &:checked + .checkbox__label {
+  &:checked + .radio__label {
     &::after {
       display: inline-block;
     }
   }
 }
 
-.checkbox__label-caption {
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.checkbox__label {
+.radio__label {
   display: inline-flex;
   align-items: center;
   position: relative;
   margin-right: 20px;
+  margin-bottom: 10px;
+
 
   &::before {
     content: "";
@@ -35,7 +39,7 @@
     height: 58px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../img/checkbox-off.svg");
+    background-image: url("../../img/radio-off.svg");
   }
 
   &::after {
@@ -43,16 +47,23 @@
     position: absolute;
     width: 22px;
     height: 22px;
-    background-image: url("../../img/checkbox-checked.svg");
+    background-image: url("../../img/radio-active.svg");
     transform: translateX(-50%);
     left: 50%;
     display: none;
-    background-repeat: no-repeat;
   }
 }
 
+
 @media (min-width: $tablet-width) {
-  .checkbox {
-    min-width: 0;
+  .radio__label {
+    margin-right: 16px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .radio__label {
+    margin-right: 20px;
   }
 }

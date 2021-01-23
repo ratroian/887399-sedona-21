@@ -3,7 +3,37 @@
     order: -1;
     width: 50%;
     margin: 0;
-    padding: 0;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 58px;
+    padding-top: 0;
+    padding-right: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 96%;
+      background-color: $delimiter-color;
+      left: 0;
+      top: 0;
+    }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .form-fullname {
+    padding-left: 80px;
+  }
+}
+
+.form-fullname__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+.form-fullname__element {
+  margin-top: 22px;
+  margin-bottom: 0;
 }

@@ -45,3 +45,40 @@
   transform: translate(50%, 0);
   width: 1200px;
 }
+
+.hero--subpage {
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero--subpage {
+    height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero--subpage {
+    height: 300px;
+  }
+}
+
+.hero__image--subpage {
+  height: 40px;
+  margin-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image--subpage {
+    width: 456px;
+    height: 78px;
+    margin-top: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__image--subpage {
+    width: 460px;
+    height: 80px;
+    margin-top: 100px;
+  }
+}
