@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .gallery-photo__wrapper {
-    padding: 0 0 0 20px;
+    padding-left: 20px;
   }
 }
 
@@ -51,12 +51,13 @@
   font-weight: 700;
   color: $content-title-color;
   padding: 0;
-  margin: 10px 0 0 0;
+  margin-top: 9px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .gallery-photo__name {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }
 
@@ -68,18 +69,15 @@
 
 .gallery-photo__author {
   margin: 0;
-  padding: 0;
 }
 
 .gallery-photo__like {
-  margin: 12px 0 0 0;
-  padding: 0;
+  margin-top: 12px;
   display: flex;
 }
 
 @media (min-width: $tablet-width) {
   .gallery-photo__like {
-    padding: 0;
     margin: 0;
   }
 }

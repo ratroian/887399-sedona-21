@@ -1,7 +1,19 @@
 .presentation {
   text-transform: uppercase;
-  padding-top: 14px;
+  padding-top: 32px;
   padding-bottom: 54px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $background-form-input-hover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +23,10 @@
     align-items: center;
     justify-content: center;
     padding: 14px 60px 42px 60px;
+  }
+
+  &::before {
+    display: none;
   }
 }
 

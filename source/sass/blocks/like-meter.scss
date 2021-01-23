@@ -25,19 +25,19 @@
 
 @media (min-width: $tablet-width) {
   .like-meter__button {
-    padding: 0 30px 0 0;
+    padding-right: 30px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .like-meter__button svg path {
-    fill: $text-color-nav;
-    opacity: 1;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .like-meter__button * {
+//     fill: $text-color-nav;
+//     opacity: 1;
+//   }
+// }
 
 .like-meter__likes {
-  margin-left: 12px;
+  margin-left: 14px;
 }
 
 @media (min-width: $tablet-width) {
