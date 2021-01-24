@@ -62,10 +62,3 @@
     grid-column: 1/-1;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .gallery__item {
-    position: relative;
-    background-color: red;
-  }
-}
