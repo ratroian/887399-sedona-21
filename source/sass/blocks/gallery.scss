@@ -26,11 +26,11 @@
 }
 
 .gallery__item {
-  padding: 22px 20px;
+  padding: 24px 20px 20px 20px;
   min-width: 320px;
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 20px;
+  // padding-top: 24px;
+  // padding-bottom: 20px;
 
   &::before {
     content: "";

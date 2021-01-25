@@ -22,11 +22,13 @@
 .benefits-item__image {
   min-width: 100%;
   height: 260px;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
   .benefits-item__image {
     min-width: 66.66%;
+    height: 256px;
   }
 
   .benefits-item--reverse {
