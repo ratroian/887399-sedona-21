@@ -67,3 +67,12 @@
     margin-right: 20px;
   }
 }
+
+.radio__button-icon {
+  fill: red;
+}
+
+.radio__button-checked {
+  fill: black;
+  z-index: -1;
+}

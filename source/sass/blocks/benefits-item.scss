@@ -15,6 +15,13 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: $tablet-width) {
+  .benefits-item__wrapper {
+    // width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
 .benefits-item__content {
   width: 100%;
 }
@@ -27,11 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .benefits-item__image {
-    min-width: 66.66%;
-    height: 256px;
-  }
-
   .benefits-item--reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -87,7 +89,18 @@
   }
 }
 
-.benefits-item image {
-
+.benefits-item__wrapper picture {
   width: 100%;
 }
+
+.benefits-item__content picture {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-item__wrapper picture,
+  .benefits-item__content picture {
+    width: 66.66%;
+  }
+}
+
