@@ -43,6 +43,10 @@
   }
 }
 
+.services__image {
+  fill: $background-socials;
+}
+
 @media (min-width: $tablet-width) {
   .services__image {
     transform: scale(2);

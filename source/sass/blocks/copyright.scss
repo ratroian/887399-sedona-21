@@ -12,11 +12,11 @@
 .copyright__link {
   height: 34px;
 
-  &:hover * {
+  &:hover .copyright__icon {
     fill: $background-content-focus;
   }
 
-  &:active {
+  &:active .copyright__icon {
     fill: $content-title-color;
     opacity: 0.3;
   }

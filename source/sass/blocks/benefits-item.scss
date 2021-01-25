@@ -23,6 +23,7 @@
   min-width: 100%;
   height: 260px;
   object-fit: cover;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,6 +64,7 @@
 .benefits-item--mask {
   padding-top: 34px;
   position: relative;
+  fill: $background-page-content;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,4 +85,9 @@
   .benefits-item__mask {
     display: none;
   }
+}
+
+.benefits-item image {
+
+  width: 100%;
 }

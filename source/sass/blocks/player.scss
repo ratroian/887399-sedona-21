@@ -66,6 +66,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 .player__button-group {
@@ -80,48 +81,59 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .player__button {
-    background-color: inherit;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .player__button {
+//     background-color: inherit;
+//   }
+// }
 
-.player__button--reverse {
-  height: 20px;
-  background: transparent;
-}
+// .player__button--reverse {
+//   height: 20px;
+//   background: transparent;
+// }
 
-@media (min-width: $tablet-width) {
-  .player__button--icon path {
-    fill: $text-color-button;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .player__button--icon path {
+//     fill: $text-color-button;
+//   }
+// }
 
 .player__button:hover {
-  .player__button--icon path {
+  .player__icon {
     fill: $content-text-color;
   }
 
   &:active {
-    .player__button--icon path {
+    .player__icon {
       fill: $content-text-color;
       fill-opacity: 0.3;
+      outline: none;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .player__button:hover {
-    .player__button--icon path {
+    .player__icon {
       fill: $background-page-content;
       fill-opacity: 0.6;
     }
 
     &:active {
-      .player__button--icon path {
+      .player__icon {
         fill: $background-page-content;
         fill-opacity: 0.3;
       }
     }
+  }
+}
+
+.player__icon {
+  fill: $player-button-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .player__icon {
+    fill: $text-color-button;
   }
 }
