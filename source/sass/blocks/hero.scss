@@ -9,7 +9,8 @@
   position: relative;
   overflow: hidden;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx),
+    (min-resolution: 144dpi) {
     background-image: url("../img/index-back-mobile@2x.jpg");
     background-size: 100%;
   }
@@ -21,7 +22,8 @@
     height: 518px;
     background-image: url("../img/index-back-tablet@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx),
+      (min-resolution: 144dpi) {
       background-image: url("../img/index-back-tablet@2x.jpg");
     }
   }
@@ -32,7 +34,8 @@
     width: 1200px;
     background-image: url("../img/index-back-desktop@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx),
+      (min-resolution: 144dpi) {
       background-image: url("../img/index-back-desktop@2x.jpg");
     }
   }
