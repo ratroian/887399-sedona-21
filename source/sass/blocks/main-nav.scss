@@ -38,6 +38,10 @@
   background-color: $background-button;
 }
 
+.main-nav__toggle-open {
+  fill: black;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;

@@ -98,6 +98,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .benefits-item picture {
+    width: 66.66%;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .benefits-item__wrapper picture,
   .benefits-item__content picture {
     width: 66.66%;

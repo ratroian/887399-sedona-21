@@ -5,54 +5,87 @@
   width: 100%;
 }
 
-.checkbox__input {
-  z-index: -1;
-  opacity: 0;
-  position: absolute;
+// .checkbox__input {
+//   z-index: -1;
+//   opacity: 0;
+//   position: absolute;
 
-  &:checked + .checkbox__label {
-    &::after {
-      display: inline-block;
-    }
-  }
-}
+//   &:checked + .checkbox__label {
+//     &::after {
+//       display: inline-block;
+//     }
+//   }
+// }
 
 .checkbox__label-caption {
   font-weight: 700;
   font-size: 18px;
 }
 
-.checkbox__label {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  margin-right: 20px;
+// .checkbox__label {
+//   display: inline-flex;
+//   align-items: center;
+//   position: relative;
+//   margin-right: 20px;
 
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 58px;
-    height: 58px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../img/checkbox-off.svg");
-  }
+//   &::before {
+//     content: "";
+//     display: inline-block;
+//     width: 58px;
+//     height: 58px;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-image: url("../img/checkbox-off.svg");
+//   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    background-image: url("../img/checkbox-checked.svg");
-    transform: translateX(-50%);
-    left: 50%;
-    display: none;
-    background-repeat: no-repeat;
-  }
-}
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 22px;
+//     height: 22px;
+//     background-image: url("../img/checkbox-checked.svg");
+//     transform: translateX(-50%);
+//     left: 50%;
+//     display: none;
+//     background-repeat: no-repeat;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .checkbox {
     min-width: 0;
+  }
+}
+
+.checkbox__button {
+  margin-right: 22px;
+}
+
+.checkbox__button-on {
+  display: none;
+}
+
+
+.checkbox__input {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+
+  &:checked + .checkbox__button .checkbox__button-on {
+    display: block;
+  }
+
+  &:hover + .checkbox__button rect {
+    fill: $background-form-input-hover;
+    stroke: $background-form-input-hover;
+  }
+
+  &:active + .checkbox__button rect {
+    fill: $background-form-radio-active;
+    stroke: $background-form-radio-active;
+  }
+
+  &:active + .checkbox__button .checkbox__button-on {
+    opacity: 0.3;
   }
 }

@@ -9,6 +9,13 @@
 
   <body class="page__body">
 
+    <!-- <svg style="display: none;">
+      <symbol class="radio__button-icon" viewBox="0 0 56 56" id="radio-icon">
+        <path class="radio__button-of" d="M53.2464 27.9845C53.2464 14.0404 41.9412 2.73288 27.995 2.73288C14.0488 2.73288 2.74325 14.0404 2.74325 27.9845C2.74325 41.932 14.0491 53.2362 27.995 53.2362C41.941 53.2362 53.2464 41.9319 53.2464 27.9845Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"/>
+        <path class="radio__button-on" d="M37.0209 27.9225C37.0209 22.9027 32.9503 18.8288 27.9284 18.8288C22.9062 18.8288 18.8357 22.9026 18.8357 27.9225C18.8357 32.9457 22.9065 37.0168 27.9284 37.0168C32.9501 37.0168 37.0209 32.9457 37.0209 27.9225Z" fill="#333333" stroke="#333333" stroke-width="3"/>
+      </symbol>
+    </svg> -->
+
     <div class="page-wrapper">
       <header class="page-header">
         <a class="page-header__link logo" href="">
@@ -95,19 +102,29 @@
             <h3 class="form-rating__title form-heading form-heading--radio">Ваше общее впечатление:</h3>
             <div class="form-rating__radio radio">
               <input class="radio__button" type="radio" name="product-group" value="adaptive" id="filter-positive">
-              <svg class="radio__button-icon" width="56" height="56">
-                <use xlink:href="/img/sprite.svg#radio-button"></use>
+              <!-- <svg class="radio__button-icon" width="56" height="56">
+                <use xlink:href="#radio-icon"></use>
+              </svg> -->
+              <svg class="radio__button-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="radio__button-of" d="M53.2464 27.9845C53.2464 14.0404 41.9412 2.73288 27.995 2.73288C14.0488 2.73288 2.74325 14.0404 2.74325 27.9845C2.74325 41.932 14.0491 53.2362 27.995 53.2362C41.941 53.2362 53.2464 41.9319 53.2464 27.9845Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"/>
+                <path class="radio__button-on" d="M37.0209 27.9225C37.0209 22.9027 32.9503 18.8288 27.9284 18.8288C22.9062 18.8288 18.8357 22.9026 18.8357 27.9225C18.8357 32.9457 22.9065 37.0168 27.9284 37.0168C32.9501 37.0168 37.0209 32.9457 37.0209 27.9225Z" fill="#333333" stroke="#333333" stroke-width="3"/>
               </svg>
               <label class="radio__label-caption" for="filter-positive">Скорее положительное</label>
             </div>
             <div class="form-rating__radio radio">
               <input class="radio__button visually-hidden" type="radio" name="product-group" value="fixed" id="filter-negative" checked>
-              <label class="radio__label" for="filter-positive"></label>
+              <svg class="radio__button-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="radio__button-of" d="M53.2464 27.9845C53.2464 14.0404 41.9412 2.73288 27.995 2.73288C14.0488 2.73288 2.74325 14.0404 2.74325 27.9845C2.74325 41.932 14.0491 53.2362 27.995 53.2362C41.941 53.2362 53.2464 41.9319 53.2464 27.9845Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"/>
+                <path class="radio__button-on" d="M37.0209 27.9225C37.0209 22.9027 32.9503 18.8288 27.9284 18.8288C22.9062 18.8288 18.8357 22.9026 18.8357 27.9225C18.8357 32.9457 22.9065 37.0168 27.9284 37.0168C32.9501 37.0168 37.0209 32.9457 37.0209 27.9225Z" fill="#333333" stroke="#333333" stroke-width="3"/>
+              </svg>
               <label class="radio__label-caption" for="filter-negative">Скорее отрицательное</label>
             </div>
             <div class="form-rating__radio radio">
               <input class="radio__button visually-hidden" type="radio" name="product-group" value="rubber" id="filter-unknow">
-              <label class="radio__label" for="filter-positive"></label>
+              <svg class="radio__button-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="radio__button-of" d="M53.2464 27.9845C53.2464 14.0404 41.9412 2.73288 27.995 2.73288C14.0488 2.73288 2.74325 14.0404 2.74325 27.9845C2.74325 41.932 14.0491 53.2362 27.995 53.2362C41.941 53.2362 53.2464 41.9319 53.2464 27.9845Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5"/>
+                <path class="radio__button-on" d="M37.0209 27.9225C37.0209 22.9027 32.9503 18.8288 27.9284 18.8288C22.9062 18.8288 18.8357 22.9026 18.8357 27.9225C18.8357 32.9457 22.9065 37.0168 27.9284 37.0168C32.9501 37.0168 37.0209 32.9457 37.0209 27.9225Z" fill="#333333" stroke="#333333" stroke-width="3"/>
+              </svg>
               <label class="radio__label-caption" for="filter-unknow">Затрудняюсь ответить</label>
             </div>
           </fieldset>
@@ -116,22 +133,34 @@
             <div class="checkbox-wrapper">
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-devils-bridge" value="devils-bridge" checked>
-                <label class="checkbox__label" for="filter-devils-bridge"></label>
+                <svg class="checkbox__button" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5" stroke-linejoin="round"/>
+                  <path class="checkbox__button-on" d="M39.925 21.325L38.825 20.225C38.525 19.925 37.925 19.925 37.625 20.225L25.725 32.125L19.525 25.925C19.225 25.625 18.625 25.625 18.325 25.925L17.225 27.025C16.925 27.325 16.925 27.925 17.225 28.225L25.025 36.025C25.225 36.225 25.425 36.225 25.625 36.225C25.825 36.225 26.025 36.125 26.225 36.025L39.725 22.525C40.225 22.225 40.225 21.725 39.925 21.325Z" fill="#333333"/>
+                </svg>
                 <label class="checkbox__label-caption" for="filter-devils-bridge">Мост Дьявола</label>
               </div>
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-mount-bell" value="mount-bell" checked>
-                <label class="checkbox__label" for="filter-mount-bell"></label>
+                <svg class="checkbox__button" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5" stroke-linejoin="round"/>
+                  <path class="checkbox__button-on" d="M39.925 21.325L38.825 20.225C38.525 19.925 37.925 19.925 37.625 20.225L25.725 32.125L19.525 25.925C19.225 25.625 18.625 25.625 18.325 25.925L17.225 27.025C16.925 27.325 16.925 27.925 17.225 28.225L25.025 36.025C25.225 36.225 25.425 36.225 25.625 36.225C25.825 36.225 26.025 36.125 26.225 36.025L39.725 22.525C40.225 22.225 40.225 21.725 39.925 21.325Z" fill="#333333"/>
+                </svg>
                 <label class="checkbox__label-caption" for="filter-mount-bell">Гора-Колокол</label>
               </div>
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-slide-park" value="slide-park" checked>
-                <label class="checkbox__label" for="filter-slide-park"></label>
+                <svg class="checkbox__button" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5" stroke-linejoin="round"/>
+                  <path class="checkbox__button-on" d="M39.925 21.325L38.825 20.225C38.525 19.925 37.925 19.925 37.625 20.225L25.725 32.125L19.525 25.925C19.225 25.625 18.625 25.625 18.325 25.925L17.225 27.025C16.925 27.325 16.925 27.925 17.225 28.225L25.025 36.025C25.225 36.225 25.425 36.225 25.625 36.225C25.825 36.225 26.025 36.125 26.225 36.025L39.725 22.525C40.225 22.225 40.225 21.725 39.925 21.325Z" fill="#333333"/>
+                </svg>
                 <label class="checkbox__label-caption" for="filter-slide-park">Слайд-парк</label>
               </div>
               <div class="form-location__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="filter-checkbox" id="filter-red-rocks" value="red-rocks">
-                <label class="checkbox__label" for="filter-red-rocks"></label>
+                <svg class="checkbox__button" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="2.5" width="51" height="51" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="5" stroke-linejoin="round"/>
+                  <path class="checkbox__button-on" d="M39.925 21.325L38.825 20.225C38.525 19.925 37.925 19.925 37.625 20.225L25.725 32.125L19.525 25.925C19.225 25.625 18.625 25.625 18.325 25.925L17.225 27.025C16.925 27.325 16.925 27.925 17.225 28.225L25.025 36.025C25.225 36.225 25.425 36.225 25.625 36.225C25.825 36.225 26.025 36.125 26.225 36.025L39.725 22.525C40.225 22.225 40.225 21.725 39.925 21.325Z" fill="#333333"/>
+                </svg>
                 <label class="checkbox__label-caption" for="filter-red-rocks">Красные скалы</label>
               </div>
             </div>
