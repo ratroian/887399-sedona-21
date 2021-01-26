@@ -4,7 +4,8 @@
   justify-content: space-between;
 }
 
-.gallery-photo picture {
+.gallery-photo__link,
+.gallery-photo__link picture {
   width: 100%;
 }
 
