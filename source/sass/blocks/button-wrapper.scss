@@ -5,3 +5,9 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button-wrapper {
+    flex-wrap: nowrap;
+  }
+}

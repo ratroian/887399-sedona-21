@@ -7,13 +7,5 @@
 @media (min-width: $desktop-width) {
   .logo {
     width: 186px;
-    height: 96px;
-    transform: translate(50%);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .logo__logo-image {
-    transform: translate(-42px);
   }
 }

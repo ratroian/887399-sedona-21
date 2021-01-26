@@ -22,18 +22,18 @@
 
 @media (min-width: $tablet-width) {
   .services {
-    padding-top: 74px;
+    padding-top: 56px;
     flex-direction: column;
     align-items: center;
     padding-left: 0;
     width: 28%;
 
     &:first-child {
-      padding-top: 74px;
+      padding-top: 56px;
     }
 
     &:last-child {
-      padding-top: 74px;
+      padding-top: 56px;
     }
 
     &:nth-child(2) {
@@ -49,7 +49,8 @@
 
 @media (min-width: $tablet-width) {
   .services__image {
-    transform: scale(2);
+    width: 74px;
+    height: 72px;
   }
 }
 
@@ -68,7 +69,7 @@
     font-size: 21px;
     line-height: 1.24;
     margin-left: 0;
-    padding-top: 44px;
+    padding-top: 26px;
     padding-bottom: 22px;
   }
 }

@@ -72,8 +72,10 @@
 @media (min-width: $desktop-width) {
   .form__element--button {
     width: 480px;
-    padding-left: 148px;
-    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    margin: 0 0 70px 0;
   }
 }
 
@@ -93,6 +95,6 @@
 
 @media (min-width: $desktop-width) {
   .form__element--footnote {
-    padding: 22px 0 0 320px;
+    padding: 25px 0 0 316px;
   }
 }

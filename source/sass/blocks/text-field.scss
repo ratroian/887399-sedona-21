@@ -142,6 +142,7 @@
 
 .text-field__input::placeholder {
   color: $content-title-color;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {

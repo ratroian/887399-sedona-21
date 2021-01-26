@@ -35,6 +35,7 @@
 @media (min-width: $desktop-width) {
   .content--color {
     padding-top: 45px;
+    padding-bottom: 30px;
   }
 }
 
@@ -47,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .content__title {
     font-size: 21px;
-    width: 60%;
+    width: 160px;
   }
 }
 
