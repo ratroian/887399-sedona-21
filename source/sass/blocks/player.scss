@@ -81,23 +81,6 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .player__button {
-//     background-color: inherit;
-//   }
-// }
-
-// .player__button--reverse {
-//   height: 20px;
-//   background: transparent;
-// }
-
-// @media (min-width: $tablet-width) {
-//   .player__button--icon path {
-//     fill: $text-color-button;
-//   }
-// }
-
 .player__button:hover {
   .player__icon {
     fill: $content-text-color;

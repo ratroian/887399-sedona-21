@@ -4,28 +4,16 @@
   z-index: 4;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .logo {
-    z-index: 4;
+    width: 186px;
+    height: 96px;
+    transform: translate(50%);
   }
 }
 
-.logo__logo-image {
-  position: relative;
-}
-
-
-.logo__logo-substrate {
-  display: none;
-}
-
 @media (min-width: $desktop-width) {
-  .logo__logo-substrate {
-    display: inline-block;
-    position: absolute;
-    right: 50%;
-    transform: translate(50%, 0);
-    z-index: -1;
-    fill: $background-socials;
+  .logo__logo-image {
+    transform: translate(-42px);
   }
 }

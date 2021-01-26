@@ -23,15 +23,6 @@
   }
 }
 
-// .text-field-wrapper--tel::after {
-//   background-image: url("../../img/form-phone.svg");
-// }
-
-// .text-field-wrapper--mail::after {
-//   background-image: url("../../img/form-mail.svg");
-// }
-
-
 @media (min-width: $tablet-width) {
   .text-field-wrapper--tel {
     margin-bottom: 10px;
@@ -43,6 +34,5 @@
   .text-field-wrapper--tel,
   .text-field-wrapper--mail {
     margin: 0;
-    // padding: 0;
   }
 }
