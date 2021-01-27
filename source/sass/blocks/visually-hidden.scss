@@ -1,5 +1,6 @@
 .visually-hidden {
   // stylelint-disable declaration-no-important
+  // !important использован для переопределения стилей у блоков, которые нужно скрыть
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;

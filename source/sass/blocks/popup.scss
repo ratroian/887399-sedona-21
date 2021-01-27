@@ -9,6 +9,11 @@
   padding: 48px 56px 35px 56px;
   text-align: center;
   box-shadow: 0 7px 15px $popup-box-shadow;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,4 +112,9 @@
     font-size: 21px;
     line-height: 1.24;
   }
+}
+
+
+.popup--closed {
+  display: none;
 }
